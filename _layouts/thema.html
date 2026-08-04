@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }}</title>
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/stil.css">
+</head>
+<body>
+<p class="seitenwechsel"><a class="zurueck" href="{{ site.baseurl }}/">← Übersicht aller Themen</a><a class="zurueck" href="{{ site.baseurl }}/informationen/">{{ site.termine.linktext }} →</a></p>
+{%- assign roemisch = "I,II,III,IV,V,VI,VII,VIII,IX,X" | split: "," -%}
+{%- assign idx = page.block_nr | minus: 1 -%}
+<p class="blockname">Block {{ roemisch[idx] }} · {{ page.block_titel }}</p>
+{%- assign t = page.title -%}
+{%- assign unter = "" -%}
+{%- if t contains ": " -%}
+  {%- assign teile = t | split: ": " -%}
+  {%- assign haupt = teile[0] -%}
+  {%- assign unter = t | remove_first: haupt | remove_first: ": " -%}
+{%- elsif t contains "? " -%}
+  {%- assign teile = t | split: "? " -%}
+  {%- assign haupt = teile[0] | append: "?" -%}
+  {%- assign unter = t | remove_first: teile[0] | remove_first: "? " -%}
+{%- else -%}
+  {%- assign haupt = t -%}
+{%- endif -%}
+<h1 class="thema">{{ haupt }}</h1>
+{%- if unter != "" %}
+<p class="thema-untertitel">{{ unter }}</p>
+{%- endif %}
+<div class="inhalt">
+{{ content }}
+</div>
+<footer>{{ site.title }} · {{ site.untertitel }}</footer>
+</body>
+</html>

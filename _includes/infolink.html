@@ -1,0 +1,1 @@
+{%- assign lz = site.termine.linkzusatz | strip -%}{%- if lz == "" -%}{%- assign lz = "Anmeldung bis " | append: site.termine.anmeldeschluss -%}{%- endif -%}<a href="{{ site.baseurl }}/informationen/">{{ site.termine.linktext }} →</a><span class="frist">{{ lz }}</span>

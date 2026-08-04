@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }}</title>
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/stil.css">
+</head>
+<body>
+<a class="zurueck" href="{{ site.baseurl }}/">← Übersicht: {{ site.title }}</a>
+<header class="kopf-klein" id="seitenanfang">
+  {%- assign teile = site.untertitel | split: " · " -%}
+  <p class="dachzeile">{% for t in teile %}<span>{{ t }}{% unless forloop.last %} ·{% endunless %}</span> {% endfor %}</p>
+  <h1 class="thema">{{ page.title }}</h1>
+</header>
+<div class="inhalt inhalt-seite">
+{{ content }}
+</div>
+<footer>{{ site.title }} · {{ site.untertitel }}</footer>
+</body>
+</html>

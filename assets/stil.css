@@ -1,0 +1,568 @@
+/* ---------------------------------------------------------------------------
+   Seminar-Website – Schrift, Farben, Ränder.
+   Aufbau: 1 Grundlagen · 2 Links · 3 Kopf · 4 Übersichtsseite
+           5 Themenseite · 6 Einzelseiten · 7 Fuß · 8 Handy · 9 Druck
+   --------------------------------------------------------------------------- */
+
+/* --- 1 Grundlagen --------------------------------------------------------- */
+:root {
+  --akzent:   #1f3864;
+  --akzent-h: #2f5596;   /* aufgehellt, für Linien und Marken */
+  --grau:     #63666b;
+  --linie:    #dcdcdc;
+  --linie-h:  #eceded;
+  --text:     #1a1a1a;
+  --papier:   #fffffe;
+  --kasten:   #f5f5f1;   /* Hinweiskasten, warmer Grauton */
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: "Palatino Linotype", Palatino, "Book Antiqua", "URW Palladio L", Georgia, serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--papier);
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 2.75rem 1.5rem 5rem;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  font-kerning: normal;
+  font-variant-numeric: oldstyle-num;
+}
+
+/* --- 2 Links -------------------------------------------------------------- */
+a {
+  color: var(--akzent);
+  text-decoration-color: var(--linie);
+  text-decoration-thickness: 1px;
+  text-underline-offset: .18em;
+  transition: text-decoration-color .12s ease;
+}
+a:hover { text-decoration-color: currentColor; }
+a:visited { color: #4a4a70; }
+a:focus-visible { outline: 2px solid var(--akzent-h); outline-offset: 2px; border-radius: 2px; }
+
+/* --- 3 Kopf --------------------------------------------------------------- */
+header.kopf {
+  border-bottom: 1px solid var(--linie);
+  padding-bottom: 1.2rem;
+  margin-bottom: 2.6rem;
+}
+/* Dachzeile über dem Titel */
+header.kopf .dachzeile {
+  font-size: .78em;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--grau);
+  margin: 0 0 1.1rem;
+  hyphens: none;
+}
+header.kopf h1 {
+  color: var(--akzent);
+  font-size: 2.4rem;
+  line-height: 1.14;
+  letter-spacing: -.012em;
+  margin: 0 0 .5rem;
+  hyphens: none;
+}
+header.kopf .titelzusatz {
+  color: var(--akzent);
+  font-size: 1.3em;
+  line-height: 1.32;
+  margin: 0 0 2.1rem;
+  hyphens: none;
+}
+/* Verfasserzeile: Name, darunter die Adressen */
+header.kopf .kontakt {
+  font-size: .87em;
+  line-height: 1.45;
+  color: var(--grau);
+  margin: 0;
+}
+header.kopf .kontakt .adressen { display: block; }
+/* Linkzeile im Kopf */
+header.kopf p.mehr {
+  margin: 2.6rem 0 0;
+  padding: 1.2rem 0 0;
+  background: none;
+  border-radius: 0;
+  border-top: 1px solid var(--linie);
+}
+header.kopf .kontakt a { color: var(--grau); text-decoration: none; border-bottom: 1px solid transparent; }
+header.kopf .kontakt a:hover,
+header.kopf .kontakt a:focus-visible { color: var(--akzent); border-bottom-color: currentColor; }
+
+/* --- 4 Übersichtsseite ---------------------------------------------------- */
+
+/* Einleitungstext über der Themenliste */
+.einleitung > p {
+  font-size: .92em;
+  margin: 0 0 1.15rem;
+  line-height: 1.7;
+  text-align: justify;
+  hyphens: auto;
+  hyphenate-limit-chars: 8 4 4;
+}
+.einleitung > p:last-of-type { margin-bottom: 0; }
+
+details.block,
+h2.blocktitel {
+  border-top: 1px solid var(--linie);
+  padding-top: 1.5rem;
+  margin: 2.6rem 0 .7rem;
+}
+details.block > summary {
+  display: block;
+  cursor: pointer;
+  list-style: none;
+}
+details.block > summary::-webkit-details-marker { display: none; }
+details.block h2.blocktitel {
+  border-top: 0;
+  padding-top: 0;
+  margin: 0;
+}
+/* Schrift des Blocktitels (Rahmen und Abstände siehe oben) */
+h2.blocktitel {
+  font-size: 1.18em;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text);
+  hyphens: none;
+}
+details.block h2.blocktitel::after {
+  content: "";
+  display: inline-block;
+  width: .4em;
+  height: .4em;
+  margin-left: .6em;
+  border-right: 1.5px solid var(--grau);
+  border-bottom: 1.5px solid var(--grau);
+  transform: translateY(-.2em) rotate(45deg);
+  transition: transform .15s, border-color .15s;
+}
+details.block[open] h2.blocktitel::after {
+  transform: translateY(.05em) rotate(-135deg);
+}
+details.block > summary:hover h2.blocktitel,
+details.block > summary:focus-visible h2.blocktitel { color: var(--akzent); }
+details.block > summary:hover h2.blocktitel::after,
+details.block > summary:focus-visible h2.blocktitel::after { border-color: var(--akzent); }
+h2.blocktitel .blocknr {
+  display: block;
+  font-size: .72rem;
+  font-style: normal;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--grau);
+  margin-bottom: .3rem;
+}
+
+.blockbeschreibung {
+  margin: .9rem 0 .35rem;
+  padding: 1.05rem 1.3rem;
+  background: var(--kasten);
+  border-radius: 3px;
+  font-size: .93em;
+  line-height: 1.62;
+  color: var(--grau);
+  max-width: 44em;
+  text-wrap: pretty;
+}
+
+ol.themen { list-style: none; padding: 0; margin: 0; }
+ol.themen li {
+  margin: 0 0 .85rem;
+  display: flex;
+  gap: .8rem;
+  line-height: 1.45;
+  font-size: 1.04em;
+}
+ol.themen .nr {
+  color: var(--grau);
+  min-width: 1.9rem;
+  text-align: right;
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+}
+ol.themen a { text-decoration: none; }
+ol.themen a:hover { text-decoration: underline; text-decoration-color: currentColor; }
+
+/* Linkzeile unter dem Einleitungsabsatz */
+p.mehr {
+  margin: 2.4rem 0 0;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--linie);
+  font-size: 1.06em;
+  line-height: 1.35;
+  color: var(--text);
+  text-align: left;
+  hyphens: none;
+}
+p.mehr a { color: var(--akzent); text-decoration: none; }
+p.mehr a:hover { text-decoration: underline; }
+p.mehr .frist {
+  display: block;
+  margin-top: .3rem;
+  font-size: .78em;
+  color: var(--grau);
+}
+
+/* Hinweiskasten unter der Einleitung (Übersichtsseite) */
+.hinweise {
+  margin: 2.8rem 0 0;
+  padding: 1.5rem 1.7rem 1.4rem;
+  background: var(--kasten);
+  border-radius: 3px;
+}
+.hinweise h2 {
+  font-size: 1.1em;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--text);
+  margin: 0 0 .75rem;
+  padding: 0;
+  border: 0;
+}
+.hinweise p {
+  font-size: .92em;
+  line-height: 1.65;
+  color: var(--text);
+  margin: 0 0 1rem;
+  max-width: none;
+  text-align: left;
+  hyphens: none;
+}
+.hinweise p:last-child { margin-bottom: 0; }
+
+/* Befunde in der Einleitung: Randwort links, Satz rechts, Haarlinien dazwischen */
+.befunde { margin: 1.7rem 0; }
+.befunde > div {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  align-items: baseline;
+  gap: 0 1.5rem;
+  padding: .9rem 0;
+  border-top: 1px solid var(--linie-h);
+}
+.befunde > div:last-child { border-bottom: 1px solid var(--linie-h); }
+.befunde dt {
+  font-size: .78em;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--grau);
+  line-height: 1.32;
+  hyphens: none;
+  text-wrap: balance;
+}
+.befunde dd {
+  margin: 0;
+  font-size: .92em;
+  line-height: 1.7;
+  text-align: left;
+  hyphens: none;
+}
+@media (max-width: 34rem) {
+  .befunde > div { grid-template-columns: 1fr; gap: .25rem; padding: .8rem 0; }
+}
+
+/* --- 5 Themenseite -------------------------------------------------------- */
+.zurueck {
+  display: inline-block;
+  font-size: .88rem;
+  color: var(--grau);
+  margin-bottom: 1.8rem;
+  text-decoration: none;
+}
+.zurueck:hover { color: var(--akzent); text-decoration: underline; }
+
+/* Kopfzeile der Themenseiten: zurueck links, Informationsseite rechts */
+p.seitenwechsel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .6rem 1.5rem;
+  margin: 0 0 1.8rem;
+}
+p.seitenwechsel .zurueck { margin-bottom: 0; }
+
+.blockname {
+  font-size: .74rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--grau);
+  margin: 0 0 .45rem;
+  hyphens: none;
+}
+h1.thema {
+  font-size: 1.9rem;
+  line-height: 1.2;
+  letter-spacing: -.005em;
+  color: var(--akzent);
+  margin: 0 0 1.8rem;
+  hyphens: none;
+}
+h1.thema:has(+ .thema-untertitel) { margin-bottom: .4rem; }
+.thema-untertitel {
+  font-size: 1.45rem;
+  line-height: 1.3;
+  color: var(--akzent);
+  margin: 0 0 1.8rem;
+  hyphens: none;
+}
+
+.inhalt p { margin: 0 0 1.1rem; }
+
+/* Beschreibungsabsätze: der Fließtext am Anfang, ein bis drei Absätze */
+.inhalt > p {
+  hyphenate-limit-chars: 8 4 4;
+  font-size: 1.04rem;
+  line-height: 1.68;
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* Abschnittsmarken „Rechtsgrundlagen…“, „Kurzbeiträge…“ */
+.inhalt h2 {
+  font-size: .84rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--grau);
+  font-weight: normal;
+  margin: 2.6rem 0 .9rem;
+  padding-bottom: .4rem;
+  border-bottom: 1px solid var(--linie-h);
+  hyphens: none;
+}
+
+/* Quellen- und Literaturlisten: hängender Einzug statt Aufzählungspunkt */
+.inhalt h3 {
+  font-size: .95rem;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--grau);
+  letter-spacing: 0;
+  text-transform: none;
+  border: 0;
+  padding: 0;
+  margin: 1.9rem 0 .55rem;
+  hyphens: none;
+}
+.inhalt h2 + h3 { margin-top: 1.1rem; }
+
+.inhalt ul { list-style: none; padding-left: 0; margin: 0; }
+/* keine Silbentrennung: englische Titel würden nach deutschen Regeln getrennt */
+.inhalt li {
+  font-size: 1rem;
+  line-height: 1.55;
+  margin-bottom: .75rem;
+  padding-left: 1.4rem;
+  text-indent: -1.4rem;
+  hyphens: none;
+}
+.inhalt li em, .inhalt li i { font-style: italic; color: var(--text); }
+
+/* --- 6 Einzelseiten (Informationen) --------------------------------------- */
+/* Schlanker Kopf: Dachzeile, Seitentitel, Kontaktzeile */
+header.kopf-klein { margin-bottom: 1.2rem; }
+header.kopf-klein .dachzeile {
+  font-size: .74em;
+  letter-spacing: .095em;
+  text-transform: uppercase;
+  color: var(--grau);
+  margin: 0 0 .3rem;
+  line-height: 1.45;
+  hyphens: none;
+  overflow-wrap: normal;
+  text-wrap: balance;
+}
+header.kopf-klein .dachzeile span { white-space: nowrap; }
+header.kopf-klein h1.thema { margin: 0; }
+
+.inhalt-seite h2 {
+  font-size: 1.42rem;
+  line-height: 1.25;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 600;
+  color: var(--akzent);
+  border-bottom: none;
+  border-top: 1px solid var(--akzent-h);
+  padding-bottom: 0;
+  padding-top: 1rem;
+  margin: 3.4rem 0 .8rem;
+  hyphens: none;
+}
+.inhalt-seite h3 {
+  font-size: 1.18rem;
+  line-height: 1.3;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--text);
+  margin: 2.4rem 0 .5rem;
+  hyphens: none;
+}
+.inhalt-seite h2 + h3 { margin-top: 1.6rem; }
+.inhalt-seite h2 .hoch {
+  float: right;
+  font-size: .68em;
+  font-weight: normal;
+  line-height: 1.9;
+  color: var(--grau);
+  text-decoration: none;
+}
+.inhalt-seite h2 .hoch:hover { color: var(--akzent); }
+.inhalt-seite p { font-size: 1.04rem; text-align: left; hyphens: none; }
+.inhalt-seite > p:first-of-type { text-align: left; }
+.inhalt-seite ul {
+  list-style: disc;
+  padding-left: 1.15rem;
+  margin: .4rem 0 1.3rem;
+}
+.inhalt-seite li {
+  font-size: 1.04rem;
+  line-height: 1.5;
+  margin: 0 0 .4rem;
+  padding-left: .2rem;
+  text-indent: 0;
+  hyphens: none;
+}
+.inhalt-seite li:last-child { margin-bottom: 0; }
+.inhalt-seite li::marker { color: var(--grau); }
+.inhalt-seite h2 { scroll-margin-top: 1.2rem; }
+.inhalt-seite h2:first-of-type { margin-top: 2.4rem; }
+.inhalt-seite h3 { scroll-margin-top: 1.2rem; }
+
+/* Sprungmarken am Seitenanfang */
+nav.sprung {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  margin: 0 0 2.2rem;
+  padding: .85rem 0;
+  border-top: 1px solid var(--linie-h);
+  border-bottom: 1px solid var(--linie-h);
+  font-size: 1.08rem;
+  line-height: 1.45;
+  color: var(--grau);
+  overflow-wrap: normal;
+  hyphens: none;
+}
+nav.sprung > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1.5rem;
+}
+nav.sprung a { text-decoration: none; white-space: nowrap; }
+nav.sprung a:hover { text-decoration: underline; }
+nav.sprung a::before {
+  content: "↓";
+  margin-right: .38em;
+  color: var(--akzent-h);
+}
+
+/* Tabellen: nur waagerechte Linien */
+.inhalt table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0 1.8rem;
+  font-size: 1.04rem;
+  line-height: 1.45;
+  hyphens: none;
+  text-wrap: pretty;
+}
+.inhalt th,
+.inhalt td {
+  padding: .55rem .9rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--linie);
+}
+.inhalt th:first-child,
+.inhalt td:first-child { padding-left: 0; color: var(--grau); font-weight: 600; }
+.inhalt th:last-child,
+.inhalt td:last-child { padding-right: 0; }
+.inhalt thead th {
+  font-weight: normal;
+  color: var(--grau);
+  border-bottom-color: var(--akzent-h);
+}
+.inhalt table.termine { table-layout: fixed; }
+.inhalt table.termine td:first-child { width: 22%; }
+
+/* Zeilenbeschriftung mit Zusatz in zweiter Zeile */
+.inhalt table.termine .zwei { display: inline-block; }
+.inhalt table.termine .sws { font-size: .92em; }
+
+/* Beschriftete Angaben in einer Zelle: Beschriftung links, Wert rechts */
+.paare {
+  display: grid;
+  grid-template-columns: 6.4em 1fr;
+  gap: .3rem .8rem;
+  align-items: baseline;
+}
+/* Zeilenkopf halbfett, Feldmarke mager, Untermarke kursiv */
+.paare .f { color: var(--grau); white-space: nowrap; font-weight: normal; }
+.paare .fi {
+  display: inline-block;
+  min-width: 2.4em;
+  color: var(--grau);
+  font-style: italic;
+}
+
+/* --- 7 Fuß ---------------------------------------------------------------- */
+footer {
+  margin-top: 4rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--linie);
+  font-size: .84rem;
+  line-height: 1.5;
+  color: var(--grau);
+}
+
+/* --- 8 Handy und kleine Fenster ------------------------------------------- */
+@media (max-width: 34rem) {
+  body { font-size: 17px; padding: 1.75rem 1.15rem 3.5rem; }
+  header.kopf { padding-bottom: 1.2rem; margin-bottom: 2.4rem; }
+  header.kopf p.mehr { margin-top: 2.1rem; }
+  header.kopf .dachzeile { margin-bottom: .8rem; }
+  header.kopf h1 { font-size: 1.75rem; }
+  header.kopf .titelzusatz { font-size: 1.18em; margin-bottom: 1.5rem; }
+  header.kopf .kontakt { text-align: left; }
+  h1.thema { font-size: 1.5rem; }
+  .thema-untertitel { font-size: 1.15rem; }
+  h2.blocktitel { margin-top: 2.2rem; }
+  details.block { margin-top: 2.2rem; }
+  .einleitung > p { text-align: left; }
+  .hinweise p { max-width: none; text-align: left; }
+  .inhalt > p { text-align: left; }
+  nav.sprung { font-size: 1rem; gap: .3rem; padding: .7rem 0; margin-bottom: 1.7rem; }
+  nav.sprung > div { gap: .3rem 1rem; }
+  .inhalt table { font-size: .92rem; }
+  /* Zu schmal für zwei Spalten: Beschriftung über den Wert */
+  .paare { grid-template-columns: 1fr; row-gap: 0; }
+  .paare .f { margin-top: .5rem; }
+  .paare .f:first-child { margin-top: 0; }
+  .inhalt th, .inhalt td { padding: .45rem .6rem; }
+  ol.themen li { gap: .55rem; }
+  ol.themen .nr { min-width: 1.5rem; }
+}
+
+/* --- 9 Druck -------------------------------------------------------------- */
+@media print {
+  body { font-size: 10.5pt; max-width: none; padding: 0; color: #000; }
+  a { color: #000; text-decoration: none; }
+  .zurueck, p.seitenwechsel, p.mehr, .blockbeschreibung, nav.sprung, .hoch { display: none; }
+  details.block h2.blocktitel::after { display: none; }
+  h2.blocktitel, h1.thema { break-after: avoid; page-break-after: avoid; }
+  ol.themen li, .inhalt li { break-inside: avoid; page-break-inside: avoid; }
+  .inhalt table { break-inside: avoid; page-break-inside: avoid; }
+  footer { border-top: 1px solid #999; }
+}
+
+p.mehr:not(:has(a)) { color: var(--grau); font-style: italic; }

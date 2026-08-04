@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ site.title }}</title>
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/stil.css">
+</head>
+<body>
+<header class="kopf">
+  <p class="dachzeile">{{ site.untertitel }}</p>
+  <h1>{{ site.title }}</h1>
+  <p class="titelzusatz">{{ site.titelzusatz }}</p>
+  {%- assign m1 = site.email | strip -%}
+  {%- assign m2 = site.email2 | strip -%}
+  <p class="kontakt">{{ site.lehrende }}
+    {%- if m1 != "" or m2 != "" -%}
+    <span class="adressen">
+      {%- if m1 != "" %}<a href="mailto:{{ m1 }}">{{ m1 }}</a>{% endif -%}
+      {%- if m1 != "" and m2 != "" %} · {% endif -%}
+      {%- if m2 != "" %}<a href="mailto:{{ m2 }}">{{ m2 }}</a>{% endif -%}
+    </span>
+    {%- endif -%}
+  </p>
+  <p class="mehr">{% include infolink.html %}</p>
+</header>
+<div class="einleitung">
+{{ content }}
+</div>
+<!-- themenliste -->
+{%- assign themen = site.themen | sort: "reihenfolge" -%}
+{%- assign roemisch = "I,II,III,IV,V,VI,VII,VIII,IX,X" | split: "," -%}
+{%- assign n = 0 -%}
+{%- assign block = "" -%}
+{%- for t in themen -%}
+{%- if t.block_nr != block %}
+{% unless forloop.first %}</ol>
+{% endunless %}
+{%- assign idx = t.block_nr | minus: 1 -%}
+{%- assign beschreibung = site.bloecke | where: "nr", t.block_nr | first -%}
+{%- if beschreibung %}
+<details class="block">
+<summary><h2 class="blocktitel"><span class="blocknr">Block {{ roemisch[idx] }}</span>{{ t.block_titel }}</h2></summary>
+<p class="blockbeschreibung">{{ beschreibung.text | strip }}</p>
+</details>
+{%- else %}
+<h2 class="blocktitel"><span class="blocknr">Block {{ roemisch[idx] }}</span>{{ t.block_titel }}</h2>
+{%- endif %}
+<ol class="themen">
+{%- assign block = t.block_nr -%}
+{%- endif -%}
+{%- assign n = n | plus: 1 %}
+<li><span class="nr">{{ n }}.</span> <a href="{{ site.baseurl }}{{ t.url }}">{{ t.title }}</a></li>
+{%- endfor %}
+</ol>
+<!-- /themenliste -->
+<footer>Stand: {{ site.time | date: "%-d.%-m.%Y" }}</footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+# Grundeinstellungen
+title: "Unionsrecht unter Handlungsdruck"
+titelzusatz: "Verteidigung, Klima, Migration, Digitales"
+untertitel: "Seminar zum Europarecht · Wintersemester 2026/27"
+lehrende: "Dr. Gabriele Wadlig, LL.M. (NYU)"
+
+# Kontakt (erscheint im Seitenkopf)
+email: "gabriele.wadlig@law.nyu.edu"
+# email2: "zweite.adresse@uni-leipzig.de"
+
+# Termine
+termine:
+  anmeldeschluss: "Sonntag, 6. September 2026, 20 Uhr"
+  vorbesprechung: "7. bis 11. September 2026"
+  vorbesprechung_termin: ""
+  vorbesprechung_zugang: "Zugangsdaten erhalten Sie nach Ablauf der Anmeldefrist per E-Mail"
+  block: "in der zweiten Januarhälfte 2027"
+  block_hinweis: "genaue Termine folgen und werden hier ergänzt"
+
+  bearbeitungsbeginn: ""
+  abgabe_zulassung: ""
+  abgabe_pruefung: ""
+  beginn_offen: "mit der endgültigen Themenzuteilung; (das Datum wird hier ergänzt)"
+  abgabe_offen: "finden Sie nach der Vorbesprechung hier"
+
+  linktext: "Anmeldung, Termine und Formalia"
+  linkzusatz: ""
+
+# Angaben für die Überblickstabelle
+seminar:
+  lehrform: "Blockseminar"
+  sws: "2 SWS"
+  raum: ""
+  fachsemester: "Zulassungsseminar (ZS) ab dem 5. Fachsemester; Prüfungsseminar (PS) ab dem 6. Fachsemester"
+  schwerpunkt: "als ZS in allen Bereichen; als PS primär im SPB 4"
+  moodle: ""
+  buero: ""
+  sprechstunde: ""
+
+# Muss dem Repository-Namen entsprechen
+baseurl: "/Seminar-Europarecht-WiSe-26-27"
+
+# Kurzbeschreibung je Block; nr muss dem block_nr der Themendateien entsprechen
+bloecke:
+  - nr: 1
+    text: >
+      Die Wahl der Rechtsgrundlage entscheidet, ob die Union handeln darf und wie:
+      ob der Rat einstimmig oder mit qualifizierter Mehrheit beschließt, ob das
+      Parlament mitentscheidet, angehört wird oder außen vor bleibt. Bei
+      völkerrechtlichen Abkommen entscheidet sie zusätzlich darüber, ob alle
+      Mitgliedstaaten ratifizieren müssen. Sie bestimmt zugleich, wie weit die Union
+      in Bereiche hineinreicht, die im Kern bei den Mitgliedstaaten liegen, etwa in
+      das Arbeitsentgelt und in das Strafrecht. Berührt ist auch die gerichtliche
+      Kontrolle: ob eine Maßnahme überhaupt geprüft werden kann, wann das geschieht
+      und ob sie bis dahin schon wirkt. Umstritten ist jeweils, ob und wie weit die
+      gewählte Grundlage die Maßnahme trägt und was sie ihr inhaltlich vorgibt.
+  - nr: 2
+    text: >
+      Seit 2025 bündelt die Kommission Änderungen bestehender Rechtsakte in
+      Sammelvorschlägen. Der Omnibus I betrifft die Nachhaltigkeitsregulierung, der
+      Digital Omnibus das Daten- und das KI-Recht. Schwellenwerte steigen, Pflichten
+      entfallen, Anwendungsfristen verschieben sich, Grundbegriffe werden neu
+      gefasst. Der Gesetzgeber bezeichnet das als Vereinfachung ohne Absenkung des
+      Schutzniveaus. Die Datenschutzaufsicht hat dem in zentralen Punkten
+      widersprochen, und bei der Vorbereitung eines der Vorschläge hat die
+      Europäische Bürgerbeauftragte Verfahrensmängel festgestellt, die
+      zusammengenommen einen Missstand ergeben. Beanstandet wird, dass
+      Schutzniveaus abgesenkt und Rechte
+      zurückgenommen werden und dass ein Verfahren, das viele Rechtsakte zugleich
+      ändert, die Auseinandersetzung darüber verkürzt.
+  - nr: 3
+    text: >
+      Das neue Asyl- und Migrationsrecht setzt auf Beschleunigung und auf
+      Verlagerung. Die seit Juli 2026 geltende Verordnung über Asyl- und
+      Migrationsmanagement verteilt die Lasten zwischen den Mitgliedstaaten neu;
+      diese können Schutzsuchende übernehmen oder stattdessen Finanzbeiträge leisten. Die
+      künftige Rückführungsverordnung soll die Abschiebungshaft ausweiten und
+      erstmals erlauben, Ausreisepflichtige in Drittstaaten zu verbringen, zu denen
+      sie keine Verbindung haben. Unabhängig davon betreibt Italien seit 2024
+      Einrichtungen auf albanischem Staatsgebiet, in denen italienisches Recht gilt
+      und italienische Behörden entscheiden; dazu sind Vorabentscheidungsverfahren
+      anhängig. Umstritten ist, wie weit die Garantien des Unionsrechts an solche
+      Orte reichen, ob die Grundrechtecharta dort gilt – und wer haftet, wenn bei
+      einer gemeinsamen Rückkehraktion von Mitgliedstaaten und der Europäischen
+      Agentur für die Grenz- und Küstenwache (Frontex) Rechte der Betroffenen
+      verletzt werden.
+  - nr: 4
+    text: >
+      Auch die Klima-, Umwelt- und Rohstoffpolitik der Union reicht über ihre
+      Grenzen hinaus. Aber anders als im Migrationsrecht, wo sich die Ausübung von
+      Hoheitsgewalt auf fremdes Gebiet verlagert, vollzieht die Union ihr Recht hier
+      überwiegend auf dem eigenen Gebiet und erstreckt dessen Wirkung über die
+      Grenze. Marktzugang
+      und Abgabenlast hängen von Bedingungen ab, die in anderen Ländern
+      zu erfüllen sind. Die Rohstoffversorgung sichert sie über Partnerschaften, die
+      selbst nicht bindend sind, aber in verbindliche Rechtsakte einfließen.
+      Damit setzt sie Standards für Produktionsverhältnisse, an deren Festlegung die
+      Betroffenen nicht beteiligt sind. Beanstandet wird, dass die Nachweispflichten
+      formal die Einführer treffen, praktisch aber auf die Erzeuger durchschlagen,
+      und dass Verantwortung und Leistungsfähigkeit der Erzeugerländer keine Rolle
+      spielen. Bei den Rohstoffvorhaben stehen Zugang und Versorgung im Vordergrund;
+      die ökologischen und sozialen Folgen bleiben, wo abgebaut wird, und die
+      Betroffenen können sich kaum wehren. Zugleich lockert die Union die Bindungen,
+      die sie sich in ihren Handelsabkommen selbst auferlegt hat.
+  - nr: 5
+    text: >
+      Unionsrecht gilt nur, soweit es durchgesetzt und überprüft wird. Wer im
+      Allgemeininteresse klagt, scheitert regelmäßig an der individuellen
+      Betroffenheit, sichtbar vor allem in Klimaklagen und in Verfahren zur Außen-
+      und Sicherheitspolitik. Ist der Weg nach Luxemburg versperrt, verlagert sich
+      die Kontrolle nach Straßburg; dort ist zu klären, ob die Erfüllung
+      unionsrechtlicher Vorgaben die Mitgliedstaaten von der Konventionskontrolle
+      freistellt. Gegenüber Schiedsgerichten geht die Union den umgekehrten Weg:
+      Anwendungsvorrang, Beihilfen- und Sanktionsrecht sollen verhindern, dass
+      Schiedssprüche Wirkung entfalten. Wo sie selbst vollzieht, ermittelt und
+      entscheidet die Kommission gegenüber den Plattformen in einer Hand und
+      verfolgt zugleich handels- und außenpolitische Ziele.
+
+# Technik
+collections:
+  themen:
+    output: true
+    permalink: /themen/:name/
+defaults:
+  - scope:
+      path: ""
+      type: themen
+    values:
+      layout: thema
+exclude:
+  - README.md

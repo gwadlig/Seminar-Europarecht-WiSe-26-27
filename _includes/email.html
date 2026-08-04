@@ -1,0 +1,1 @@
+{%- assign m1 = site.email | strip -%}{%- assign m2 = site.email2 | strip -%}{%- if m1 != "" -%}<a href="mailto:{{ m1 }}">{{ m1 }}</a>{%- endif -%}{%- if m1 != "" and m2 != "" %} oder {% endif -%}{%- if m2 != "" -%}<a href="mailto:{{ m2 }}">{{ m2 }}</a>{%- endif -%}
