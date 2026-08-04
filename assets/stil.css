@@ -541,8 +541,9 @@ footer {
   .einleitung > p { text-align: left; }
   .hinweise p { max-width: none; text-align: left; }
   .inhalt > p { text-align: left; }
+  /* Sprungmarken untereinander statt in Flatterzeilen */
   nav.sprung { font-size: 1rem; gap: .3rem; padding: .7rem 0; margin-bottom: 1.7rem; }
-  nav.sprung > div { gap: .3rem 1rem; }
+  nav.sprung > div { flex-direction: column; gap: .3rem; }
   .inhalt table { font-size: .92rem; }
   /* Zu schmal für zwei Spalten: Beschriftung über den Wert */
   .paare { grid-template-columns: 1fr; row-gap: 0; }
@@ -551,6 +552,38 @@ footer {
   .inhalt th, .inhalt td { padding: .45rem .6rem; }
   ol.themen li { gap: .55rem; }
   ol.themen .nr { min-width: 1.5rem; }
+
+  /* Termintabelle: zu schmal für zwei Spalten, daher Zeile für Zeile
+     gestapelt – Beschriftung über dem Wert, jeweils volle Breite.
+     Verhindert den Wortbruch in der linken Spalte und den Überlauf
+     der Inline-Blöcke (.zwei) nach rechts. */
+  .inhalt table.termine,
+  .inhalt table.termine tbody,
+  .inhalt table.termine tr,
+  .inhalt table.termine td { display: block; width: auto; }
+  .inhalt table.termine { table-layout: auto; }
+  .inhalt table.termine tr {
+    padding: .85rem 0;
+    border-bottom: 1px solid var(--linie);
+  }
+  .inhalt table.termine tr:first-child { padding-top: 0; }
+  .inhalt table.termine tr:last-child { border-bottom: 0; }
+  .inhalt table.termine td { padding: 0; border: 0; }
+  .inhalt table.termine td:first-child {
+    width: auto;
+    font-size: .78em;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--grau);
+    line-height: 1.32;
+    margin-bottom: .4rem;
+    hyphens: none;
+  }
+  /* „Blockseminar (2 SWS)“ in einer Zeile statt zweier */
+  .inhalt table.termine .zwei { display: inline; }
+  .inhalt table.termine .zwei br { display: none; }
+  .inhalt table.termine .sws { white-space: nowrap; }
+  .inhalt table.termine .sws::before { content: " "; }
 }
 
 /* --- 9 Druck -------------------------------------------------------------- */
