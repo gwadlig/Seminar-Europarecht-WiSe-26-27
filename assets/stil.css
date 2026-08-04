@@ -492,8 +492,16 @@ nav.sprung a::before {
   color: var(--grau);
   border-bottom-color: var(--akzent-h);
 }
-.inhalt table.termine { table-layout: fixed; }
-.inhalt table.termine td:first-child { width: 22%; }
+/* Die Beschriftungsspalte richtet sich nach dem längsten Wort, nicht nach
+   der Fensterbreite: eine feste Prozentbreite zerbricht „Bearbeitungszeit“
+   und „Vorbesprechung“, sobald das Fenster schmaler wird. width:1% plus
+   nowrap zwingt die Spalte auf ihre Inhaltsbreite. */
+.inhalt table.termine { table-layout: auto; }
+.inhalt table.termine td:first-child {
+  width: 1%;
+  white-space: nowrap;
+  padding-right: 1rem;
+}
 
 /* Zeilenbeschriftung mit Zusatz in zweiter Zeile */
 .inhalt table.termine .zwei { display: inline-block; }
@@ -502,7 +510,9 @@ nav.sprung a::before {
 /* Beschriftete Angaben in einer Zelle: Beschriftung links, Wert rechts */
 .paare {
   display: grid;
-  grid-template-columns: 6.4em 1fr;
+  /* max-content, weil .f nicht umbricht: eine feste Spur von 6.4em ist für
+     „Abgabetermin:“ zu schmal, die Marke liefe sonst in die Wertspalte */
+  grid-template-columns: minmax(6.4em, max-content) 1fr;
   gap: .3rem .8rem;
   align-items: baseline;
 }
@@ -510,7 +520,7 @@ nav.sprung a::before {
 .paare .f { color: var(--grau); white-space: nowrap; font-weight: normal; }
 .paare .fi {
   display: inline-block;
-  min-width: 2.4em;
+  min-width: 2em;
   color: var(--grau);
   font-style: italic;
 }
@@ -545,10 +555,20 @@ footer {
   nav.sprung { font-size: 1rem; gap: .3rem; padding: .7rem 0; margin-bottom: 1.7rem; }
   nav.sprung > div { flex-direction: column; gap: .3rem; }
   .inhalt table { font-size: .92rem; }
-  /* Zu schmal für zwei Spalten: Beschriftung über den Wert */
-  .paare { grid-template-columns: 1fr; row-gap: 0; }
-  .paare .f { margin-top: .5rem; }
-  .paare .f:first-child { margin-top: 0; }
+  /* Marke und Wert bleiben nebeneinander: gestapelt bekäme jede kurze
+     Angabe („9 Wochen“) eine eigene Zeile. Die Marke bekommt nur die
+     Breite, die sie braucht. */
+  .paare {
+    grid-template-columns: minmax(3.2em, max-content) 1fr;
+    gap: .3rem .7rem;
+  }
+  .paare .f { font-size: .9em; }
+  /* Ausnahme: E-Mail-Adressen. Sie sind für die schmale Wertspalte zu
+     lang und brächen mitten im Wort – also volle Breite unter der Marke,
+     leicht eingerückt, damit die Zugehörigkeit sichtbar bleibt. */
+  .paare > .f:has(+ span:has(a[href^="mailto"])),
+  .paare > span:has(a[href^="mailto"]) { grid-column: 1 / -1; }
+  .paare > span:has(a[href^="mailto"]) { padding-left: .5rem; }
   .inhalt th, .inhalt td { padding: .45rem .6rem; }
   ol.themen li { gap: .55rem; }
   ol.themen .nr { min-width: 1.5rem; }
@@ -569,16 +589,22 @@ footer {
   .inhalt table.termine tr:first-child { padding-top: 0; }
   .inhalt table.termine tr:last-child { border-bottom: 0; }
   .inhalt table.termine td { padding: 0; border: 0; }
+  /* Zeilenkopf trägt die Gliederung, muss also kräftiger sein als die
+     Feldmarken darunter – gestapelt fehlt die Spaltenkante als Trennung */
   .inhalt table.termine td:first-child {
     width: auto;
-    font-size: .78em;
+    white-space: normal;
+    font-size: .82em;
+    font-weight: 600;
     letter-spacing: .06em;
     text-transform: uppercase;
-    color: var(--grau);
+    color: var(--text);
     line-height: 1.32;
-    margin-bottom: .4rem;
+    margin-bottom: .45rem;
     hyphens: none;
   }
+  /* Der ganze Wert eine Stufe eingerückt: er gehört sichtbar zum Kopf */
+  .inhalt table.termine td:last-child { padding-left: .9rem; }
   /* „Blockseminar (2 SWS)“ in einer Zeile statt zweier */
   .inhalt table.termine .zwei { display: inline; }
   .inhalt table.termine .zwei br { display: none; }
