@@ -59,7 +59,12 @@ header.kopf .dachzeile {
   color: var(--grau);
   margin: 0 0 1.1rem;
   hyphens: none;
+  /* reicht die Breite nicht, dann zwei gleich lange Zeilen statt eines
+     einzelnen umgebrochenen Wortes */
+  text-wrap: balance;
 }
+/* Die Teile der Dachzeile brechen nur an den Trennpunkten um */
+.dachzeile span { white-space: nowrap; }
 header.kopf h1 {
   color: var(--akzent);
   font-size: 2.4rem;
@@ -77,6 +82,7 @@ header.kopf .titelzusatz {
 }
 /* Verfasserzeile: Name, darunter die Adressen */
 header.kopf .kontakt {
+  hyphens: none;
   font-size: .87em;
   line-height: 1.45;
   color: var(--grau);
@@ -171,6 +177,7 @@ h2.blocktitel .blocknr {
   color: var(--grau);
   max-width: 44em;
   text-wrap: pretty;
+  hyphens: none;
 }
 
 ol.themen { list-style: none; padding: 0; margin: 0; }
@@ -180,6 +187,8 @@ ol.themen li {
   gap: .8rem;
   line-height: 1.45;
   font-size: 1.04em;
+  /* Titel stehen im Flattersatz: keine Silbentrennung, sonst „russi-sches“ */
+  hyphens: none;
 }
 ol.themen .nr {
   color: var(--grau);
@@ -187,6 +196,26 @@ ol.themen .nr {
   text-align: right;
   flex-shrink: 0;
   font-variant-numeric: tabular-nums;
+}
+/* Rücksprung aus einer Themenseite landet auf dem Listeneintrag; der
+   Abstand verhindert, dass er an der Fensterkante klebt */
+ol.themen li { scroll-margin-top: 2rem; }
+/* Kurze Markierung des angesprungenen Eintrags. Die Fläche entsteht über
+   box-shadow statt über Polsterung, damit die Liste nicht springt. */
+ol.themen li:target {
+  border-radius: 3px;
+  animation: thema-markieren 2.6s ease-out both;
+}
+@keyframes thema-markieren {
+  0%, 55% { background: var(--kasten); box-shadow: 0 0 0 .4rem var(--kasten); }
+  100%    { background: transparent;   box-shadow: 0 0 0 .4rem transparent; }
+}
+@media (prefers-reduced-motion: reduce) {
+  ol.themen li:target {
+    animation: none;
+    background: var(--kasten);
+    box-shadow: 0 0 0 .4rem var(--kasten);
+  }
 }
 ol.themen a { text-decoration: none; }
 ol.themen a:hover { text-decoration: underline; text-decoration-color: currentColor; }
@@ -297,8 +326,14 @@ p.seitenwechsel .zurueck { margin-bottom: 0; }
   text-transform: uppercase;
   color: var(--grau);
   margin: 0 0 .45rem;
+  line-height: 1.4;
   hyphens: none;
+  /* muss der Titel umbrechen, dann auf zwei möglichst gleich lange
+     Zeilen statt einer vollen und einem Restwort */
+  text-wrap: balance;
 }
+/* „Block IV ·“ bleibt zusammen und klebt am Titel */
+.blockname .bnr { white-space: nowrap; }
 h1.thema {
   font-size: 1.9rem;
   line-height: 1.2;
@@ -408,15 +443,32 @@ header.kopf-klein h1.thema { margin: 0; }
   hyphens: none;
 }
 .inhalt-seite h2 + h3 { margin-top: 1.6rem; }
+/* Rücksprung zum Seitenanfang. Als bloßes Zeichen war er 15 px groß,
+   grau und ohne Fläche – als Bedienelement nicht erkennbar und unter
+   jeder Mindestgröße für Zielflächen. Jetzt Kreis mit Haarlinie. */
 .inhalt-seite h2 .hoch {
   float: right;
-  font-size: .68em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  margin: .15rem 0 0 .8rem;
+  font-size: .9rem;
   font-weight: normal;
-  line-height: 1.9;
-  color: var(--grau);
+  line-height: 1;
+  color: var(--akzent-h);
   text-decoration: none;
+  border: 1px solid var(--linie);
+  border-radius: 50%;
+  transition: color .12s, border-color .12s, background-color .12s;
 }
-.inhalt-seite h2 .hoch:hover { color: var(--akzent); }
+.inhalt-seite h2 .hoch:hover,
+.inhalt-seite h2 .hoch:focus-visible {
+  color: var(--akzent);
+  border-color: var(--akzent-h);
+  background-color: var(--kasten);
+}
 .inhalt-seite p { font-size: 1.04rem; text-align: left; hyphens: none; }
 .inhalt-seite > p:first-of-type { text-align: left; }
 .inhalt-seite ul {
@@ -516,6 +568,25 @@ nav.sprung a::before {
   gap: .3rem .8rem;
   align-items: baseline;
 }
+/* Nebeneinander richtet sich die Wertspalte nach der längsten Marke der
+   Zelle. Wo eine lange Marke („Abgabetermin:“) die Werte kurzer Marken
+   („digital:“) nach rechts schiebt, fehlt der E-Mail-Adresse der Platz.
+   .breit stellt deshalb Marke über Wert – der Wert rückt an die Marke
+   heran und bekommt die volle Zellenbreite. */
+.paare.breit > * { grid-column: 1 / -1; }
+.paare.breit { row-gap: .1rem; }
+.paare.breit > span:not(.f) { padding-left: 1.1rem; }
+.paare.breit > .f:not(:first-child) { margin-top: .6rem; }
+
+/* Eine Angabe je Zeile, mit hängendem Einzug: bricht sie um – etwa bei
+   zwei E-Mail-Adressen – steht die Fortsetzung unter der ersten Adresse
+   und nicht unter der Untermarke „an:“ */
+.paare .zeile {
+  display: block;
+  padding-left: 2em;
+  text-indent: -2em;
+}
+
 /* Zeilenkopf halbfett, Feldmarke mager, Untermarke kursiv */
 .paare .f { color: var(--grau); white-space: nowrap; font-weight: normal; }
 .paare .fi {
@@ -527,6 +598,7 @@ nav.sprung a::before {
 
 /* --- 7 Fuß ---------------------------------------------------------------- */
 footer {
+  hyphens: none;
   margin-top: 4rem;
   padding-top: 1.1rem;
   border-top: 1px solid var(--linie);
@@ -540,21 +612,34 @@ footer {
   body { font-size: 17px; padding: 1.75rem 1.15rem 3.5rem; }
   header.kopf { padding-bottom: 1.2rem; margin-bottom: 2.4rem; }
   header.kopf p.mehr { margin-top: 2.1rem; }
-  header.kopf .dachzeile { margin-bottom: .8rem; }
+  /* .12em Sperrung kosten hier 75 px – genau die 19 px, an denen die
+     Zeile scheitert, und noch etwas Reserve */
+  header.kopf .dachzeile { margin-bottom: .8rem; letter-spacing: .06em; }
   header.kopf h1 { font-size: 1.75rem; }
   header.kopf .titelzusatz { font-size: 1.18em; margin-bottom: 1.5rem; }
   header.kopf .kontakt { text-align: left; }
+  /* Sperrung kostet bei 67 Zeichen über 110 px; auf dem Handy schmaler,
+     damit drei der fünf Blocktitel einzeilig bleiben */
+  .blockname { letter-spacing: .07em; line-height: 1.35; }
   h1.thema { font-size: 1.5rem; }
   .thema-untertitel { font-size: 1.15rem; }
   h2.blocktitel { margin-top: 2.2rem; }
   details.block { margin-top: 2.2rem; }
-  .einleitung > p { text-align: left; }
+  /* ohne Blocksatz entfällt der Grund für die Silbentrennung */
+  .einleitung > p { text-align: left; hyphens: none; }
   .hinweise p { max-width: none; text-align: left; }
-  .inhalt > p { text-align: left; }
+  .inhalt > p { text-align: left; hyphens: none; }
   /* Sprungmarken untereinander statt in Flatterzeilen */
   nav.sprung { font-size: 1rem; gap: .3rem; padding: .7rem 0; margin-bottom: 1.7rem; }
   nav.sprung > div { flex-direction: column; gap: .3rem; }
   .inhalt table { font-size: .92rem; }
+  /* am Handy als Tippfläche etwas größer */
+  .inhalt-seite h2 .hoch { width: 2.4rem; height: 2.4rem; font-size: 1rem; }
+  /* Dachzeile und Fuß sagen dasselbe zweimal. Am Handy trägt die
+     Dachzeile den Seminartitel, der Fuß das Semester – so bleibt beides
+     auf der Seite, aber jede Zeile passt. */
+  header.kopf-klein .dachzeile .weiter { display: none; }
+  footer .fuss-teil:first-of-type { display: none; }
   /* Marke und Wert bleiben nebeneinander: gestapelt bekäme jede kurze
      Angabe („9 Wochen“) eine eigene Zeile. Die Marke bekommt nur die
      Breite, die sie braucht. */
@@ -569,9 +654,15 @@ footer {
   .paare > .f:has(+ span:has(a[href^="mailto"])),
   .paare > span:has(a[href^="mailto"]) { grid-column: 1 / -1; }
   .paare > span:has(a[href^="mailto"]) { padding-left: .5rem; }
+  /* am Handy zählt jedes Pixel Breite für die Adresse */
+  .paare.breit > span:not(.f) { padding-left: .5rem; }
   .inhalt th, .inhalt td { padding: .45rem .6rem; }
   ol.themen li { gap: .55rem; }
   ol.themen .nr { min-width: 1.5rem; }
+  /* Die beiden Kopfzeilen-Links liegen untereinander; space-between wirkt
+     dann nicht mehr, also den zweiten ausdrücklich nach rechts. */
+  p.seitenwechsel { flex-direction: column; }
+  p.seitenwechsel > :last-child { align-self: flex-end; }
 
   /* Termintabelle: zu schmal für zwei Spalten, daher Zeile für Zeile
      gestapelt – Beschriftung über dem Wert, jeweils volle Breite.
@@ -605,6 +696,20 @@ footer {
   }
   /* Der ganze Wert eine Stufe eingerückt: er gehört sichtbar zum Kopf */
   .inhalt table.termine td:last-child { padding-left: .9rem; }
+
+  /* Zeilen ohne Feldmarken (Seminarleitung, E-Mail, Büro, Sprechstunde,
+     Moodle-Kurs): Kopf und Wert laufen in einer Zeile weiter, statt für
+     „Büro – wird hier ergänzt“ zwei Zeilen zu verbrauchen. Reicht die
+     Breite nicht, bricht der Wert mit hängendem Einzug um. */
+  .inhalt table.termine tr:not(:has(.paare)) {
+    padding-left: 1.2rem;
+    text-indent: -1.2rem;
+  }
+  .inhalt table.termine tr:not(:has(.paare)) td { display: inline; }
+  .inhalt table.termine tr:not(:has(.paare)) td:first-child {
+    margin: 0 .55em 0 0;
+  }
+  .inhalt table.termine tr:not(:has(.paare)) td:last-child { padding-left: 0; }
   /* „Blockseminar (2 SWS)“ in einer Zeile statt zweier */
   .inhalt table.termine .zwei { display: inline; }
   .inhalt table.termine .zwei br { display: none; }

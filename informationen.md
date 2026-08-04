@@ -15,7 +15,7 @@ permalink: /informationen/
 ## Kontakt und die wichtigsten Informationen im Überblick {#ueberblick}
 
 <table class="termine" markdown="0">
-<tr><td>Seminarleitung</td><td>{{ site.lehrende }}</td></tr>
+<tr><td>Seminarleitung</td><td>{{ site.lehrende_kurz | default: site.lehrende }}</td></tr>
 <tr><td>E-Mail</td><td>{% include email.html %}</td></tr>
 {%- assign bu = site.seminar.buero | strip -%}
 <tr><td>Büro</td><td>{% if bu != "" %}{{ bu }}{% else %}wird hier ergänzt{% endif %}</td></tr>
@@ -25,7 +25,7 @@ permalink: /informationen/
 {%- assign sws = site.seminar.sws | strip -%}
 {%- assign swp = site.seminar.schwerpunkt | strip -%}
 <tr><td><span class="zwei">{{ site.seminar.lehrform }}{% if sws != "" %}<br><span class="sws">({{ sws }})</span>{% endif %}</span></td><td><div class="paare"><span class="f">Termin:</span><span>voraussichtlich {{ site.termine.block }}{% if site.termine.block_hinweis != "" %}; {{ site.termine.block_hinweis }}{% endif %}</span><span class="f">Raum:</span><span>{% if raum != "" %}{{ raum }}{% else %}wird hier ergänzt{% endif %}</span><span class="f">Empfohlen:</span><span>{{ site.seminar.fachsemester | replace: "; ", "<br>" }}</span>{% if swp != "" %}<span class="f">Schwerpunkt:</span><span>{{ swp | replace: "; ", "<br>" }}</span>{% endif %}</div></td></tr>
-<tr><td>Anmeldung</td><td><div class="paare"><span class="f">Frist:</span><span>{{ site.termine.anmeldeschluss }}</span><span class="f">per E-Mail:</span><span><span class="fi">an:</span>{% include email.html %}<br><span class="fi">cc:</span><a href="mailto:sekretariat.europarecht@uni-leipzig.de">sekretariat.europarecht@uni-leipzig.de</a></span></div></td></tr>
+<tr><td>Anmeldung</td><td><div class="paare"><span class="f">Frist:</span><span>{{ site.termine.anmeldeschluss }}</span><span class="f">per E-Mail:</span><span><span class="zeile"><span class="fi">an:</span>{% include email.html nur="haupt" %}</span><span class="zeile"><span class="fi">cc:</span><a href="mailto:sekretariat.europarecht@uni-leipzig.de">sekretariat.europarecht@uni-leipzig.de</a></span></span></div></td></tr>
 {%- assign vb_t = site.termine.vorbesprechung_termin | strip -%}
 <tr><td>Vorbesprechung</td><td><div class="paare"><span class="f">Woche:</span><span>{{ site.termine.vorbesprechung }}</span><span class="f">Termin:</span><span>{% if vb_t != "" %}{{ vb_t }}{% else %}wird hier ergänzt{% endif %}</span><span class="f">Ort:</span><span>online</span><span class="f">Zugang:</span><span>{{ site.termine.vorbesprechung_zugang }}</span></div></td></tr>
 {%- assign beginn_offen = site.termine.beginn_offen -%}
@@ -35,7 +35,7 @@ permalink: /informationen/
 {%- assign abg_p = site.termine.abgabe_pruefung | strip -%}
 <tr><td>Bearbeitungszeit</td><td><div class="paare"><span class="f">ZS:</span><span>9 Wochen</span><span class="f">PS:</span><span>8 Wochen</span><span class="f">Beginn:</span><span>{% if beginn != "" %}{{ beginn }}{% else %}{{ beginn_offen | replace: "; ", "<br>" }}{% endif %}</span></div></td></tr>
 <tr><td>Umfang</td><td><div class="paare"><span class="f">ZS:</span><span>35.000–50.000 Zeichen, etwa 10–15 Seiten</span><span class="f">PS:</span><span>45.000–65.000 Zeichen, etwa 14–20 Seiten</span></div></td></tr>
-<tr><td>Abgabe</td><td><div class="paare">{% if abg_z != "" or abg_p != "" %}<span class="f">ZS:</span><span>{% if abg_z != "" %}{{ abg_z }}{% else %}{{ abgabe_offen }}{% endif %}</span><span class="f">PS:</span><span>{% if abg_p != "" %}{{ abg_p }}{% else %}{{ abgabe_offen }}{% endif %}</span>{% else %}<span class="f">Abgabetermin:</span><span>{{ abgabe_offen }}</span>{% endif %}<span class="f">digital:</span><span>als PDF und docx-Datei<br><span class="fi">an:</span><a href="mailto:sekretariat.europarecht@uni-leipzig.de">sekretariat.europarecht@uni-leipzig.de</a><br><span class="fi">cc:</span>{% include email.html %}</span><span class="f">gedruckt:</span><span>im Sekretariat der Professur<br>(Burgstraße 21, Raum 1.26)</span></div></td></tr>
+<tr><td>Abgabe</td><td><div class="paare breit">{% if abg_z != "" or abg_p != "" %}<span class="f">ZS:</span><span>{% if abg_z != "" %}{{ abg_z }}{% else %}{{ abgabe_offen }}{% endif %}</span><span class="f">PS:</span><span>{% if abg_p != "" %}{{ abg_p }}{% else %}{{ abgabe_offen }}{% endif %}</span>{% else %}<span class="f">Abgabetermin:</span><span>{{ abgabe_offen }}</span>{% endif %}<span class="f">digital:</span><span><span class="zeile">als PDF und docx-Datei</span><span class="zeile"><span class="fi">an:</span><a href="mailto:sekretariat.europarecht@uni-leipzig.de">sekretariat.europarecht@uni-leipzig.de</a></span><span class="zeile"><span class="fi">cc:</span>{% include email.html nur="haupt" %}</span></span><span class="f">gedruckt:</span><span>im Sekretariat der Professur<br>(Burgstraße 21, Raum 1.26)</span></div></td></tr>
 {%- assign mo = site.seminar.moodle | strip -%}
 <tr><td>Moodle-Kurs</td><td>{% if mo != "" %}<a href="{{ mo }}">{{ mo | remove: "https://" }}</a>{% else %}Der Link wird hier ergänzt{% endif %}</td></tr>
 </table>
@@ -44,7 +44,7 @@ permalink: /informationen/
 
 Das Seminar steht Studierenden aller Schwerpunktbereiche als Zulassungsseminar (ZS) offen. Als Prüfungsseminar (PS) ist es dem Schwerpunktbereich 4 zugeordnet; eine Zuordnung zu anderen Schwerpunktbereichen ist nach Absprache möglich. Für das Zulassungsseminar ist die Teilnahme ab dem 5. Fachsemester empfohlen, für das Prüfungsseminar ab dem 6.
 
-Die Anmeldung ist ab sofort bis **{{ site.termine.anmeldeschluss }}** möglich, per E-Mail an mich ({% include email.html %}), in Kopie an <a href="mailto:sekretariat.europarecht@uni-leipzig.de">sekretariat.europarecht@uni-leipzig.de</a>.
+Die Anmeldung ist ab sofort bis **{{ site.termine.anmeldeschluss }}** möglich, per E-Mail an mich ({% include email.html nur="haupt" %}), in Kopie an <a href="mailto:sekretariat.europarecht@uni-leipzig.de">sekretariat.europarecht@uni-leipzig.de</a>.
 
 Bitte geben Sie dabei Folgendes an:
 
@@ -60,7 +60,7 @@ Melden sich mehr Interessierte, als Themen zur Verfügung stehen, gilt folgende 
 
 Über die Themenvergabe verständigen wir uns in der Vorbesprechung. Manche Themen lassen mehr als eine Bearbeitung zu; in diesen Fällen wird der Zuschnitt bei der Vergabe festgelegt.
 
-Wenn Sie sich für ein Thema interessieren oder Fragen zur Themenwahl haben, schreiben Sie mir gerne schon vorher unter {% include email.html %}.
+Wenn Sie sich für ein Thema interessieren oder Fragen zur Themenwahl haben, schreiben Sie mir gerne schon vorher unter {% include email.html nur="haupt" %}.
 
 ## Vorbesprechung <a href="#seitenanfang" class="hoch" aria-label="Zum Seitenanfang">↑</a> {#vorbesprechung}
 
@@ -79,9 +79,9 @@ Die Anwesenheit in der Vorbesprechung ist Voraussetzung für die Teilnahme am Se
 
 Der Umfang versteht sich einschließlich Fußnoten und Leerzeichen. Titelseite, Gliederung und Verzeichnisse zählen nicht mit. Maßgeblich ist die Zeichenzahl; die Seitenangaben sind nur Anhaltspunkte und gehen von 12 Punkt bei 1,5-zeiligem Abstand aus. Die Bearbeitungszeit beginnt mit der endgültigen Themenzuteilung.
 
-Eine Verlängerung der Bearbeitungszeit für die Prüfungsseminararbeit kann unter Nennung besonderer Gründe auf Antrag gewährt werden. Richten Sie solche Anträge bitte per E-Mail an mich ({% include email.html %}).
+Eine Verlängerung der Bearbeitungszeit für die Prüfungsseminararbeit kann unter Nennung besonderer Gründe auf Antrag gewährt werden. Richten Sie solche Anträge bitte per E-Mail an mich ({% include email.html nur="haupt" %}).
 
-Die Arbeit reichen Sie **als PDF und als docx-Datei** per E-Mail ein, an <a href="mailto:sekretariat.europarecht@uni-leipzig.de">sekretariat.europarecht@uni-leipzig.de</a> und in Kopie an mich ({% include email.html %}). Die gedruckte Ausfertigung geben Sie bitte im Sekretariat der Professur ab (Burgstraße 21, Raum 1.26).
+Die Arbeit reichen Sie **als PDF und als docx-Datei** per E-Mail ein, an <a href="mailto:sekretariat.europarecht@uni-leipzig.de">sekretariat.europarecht@uni-leipzig.de</a> und in Kopie an mich ({% include email.html nur="haupt" %}). Die gedruckte Ausfertigung geben Sie bitte im Sekretariat der Professur ab (Burgstraße 21, Raum 1.26).
 
 Wird die Arbeit als Prüfungsleistung erbracht, ist dies bei der Themenvergabe anzuzeigen und auf dem Deckblatt der Arbeit anzugeben. Hierzu muss die Zulassung zur Schwerpunktbereichsprüfung vorliegen; das für die Anmeldung zum Prüfungsseminar erforderliche Formular ist nachzureichen.
 
@@ -103,6 +103,6 @@ Für das Blockseminar besteht grundsätzlich **Anwesenheitspflicht**; wenn Sie v
 
 ## Betreuung <a href="#seitenanfang" class="hoch" aria-label="Zum Seitenanfang">↑</a> {#betreuung}
 
-Für Rücksprachen stehe ich Ihnen nach Terminvereinbarung per E-Mail zur Verfügung ({% include email.html %}). Eine erste Rücksprache ist sinnvoll, wenn Sie sich einen Überblick verschafft und eine erste Eingrenzung vorgenommen haben.
+Für Rücksprachen stehe ich Ihnen nach Terminvereinbarung per E-Mail zur Verfügung ({% include email.html nur="haupt" %}). Eine erste Rücksprache ist sinnvoll, wenn Sie sich einen Überblick verschafft und eine erste Eingrenzung vorgenommen haben.
 
 Wenn Sie eine Rückmeldung zu Ihrer Gliederung möchten, schicken Sie sie mir gerne. Am sinnvollsten ist das, solange Sie noch nicht schreiben, denn an der Gliederung zeigt sich früh, ob der Zuschnitt trägt.

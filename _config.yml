@@ -3,15 +3,24 @@ title: "Unionsrecht unter Handlungsdruck"
 titelzusatz: "Verteidigung, Klima, Migration, Digitales"
 untertitel: "Seminar zum Europarecht · Wintersemester 2026/27"
 lehrende: "Dr. Gabriele Wadlig, LL.M. (NYU)"
+# Kurzform für die Überblickstabelle; leer lassen um die long form zu nutzen
+lehrende_kurz: "Dr. Gabriele Wadlig"
 
-# Kontakt (erscheint im Seitenkopf)
-email: "gabriele.wadlig@law.nyu.edu"
-# email2: "zweite.adresse@uni-leipzig.de"
+# Kontakt
+# email ist die Hauptadresse: sie steht überall zuerst und ist die
+# einzige, die in der Tabelle bei Anmeldung und Abgabe sowie im
+# Fließtext genannt wird. email2 erscheint nur im Seitenkopf und in
+# der Kontaktzeile der Überblickstabelle.
+email: "gabriele.wadlig@uni-leipzig.de"
+email2: "gabriele.wadlig@law.nyu.edu"
+
 
 # Termine
 termine:
-  anmeldeschluss: "Sonntag, 6. September 2026, 20 Uhr"
-  vorbesprechung: "7. bis 11. September 2026"
+  # &nbsp; verhindert Umbrüche zwischen Zahl und zugehörigem Wort
+  # (Datum, Uhrzeit). Beim Ändern bitte beibehalten.
+  anmeldeschluss: "Sonntag, 6.&nbsp;September 2026, 20&nbsp;Uhr"
+  vorbesprechung: "7.&nbsp;bis&nbsp;11.&nbsp;September 2026"
   vorbesprechung_termin: ""
   vorbesprechung_zugang: "Zugangsdaten erhalten Sie nach Ablauf der Anmeldefrist per E-Mail"
   block: "in der zweiten Januarhälfte 2027"
@@ -37,7 +46,7 @@ seminar:
   buero: ""
   sprechstunde: ""
 
-# Muss dem Repository-Namen entsprechen
+
 baseurl: "/Seminar-Europarecht-WiSe-26-27"
 
 # Kurzbeschreibung je Block; nr muss dem block_nr der Themendateien entsprechen

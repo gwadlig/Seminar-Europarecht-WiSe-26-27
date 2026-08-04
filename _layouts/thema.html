@@ -7,10 +7,18 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/stil.css">
 </head>
 <body>
-<p class="seitenwechsel"><a class="zurueck" href="{{ site.baseurl }}/">← Übersicht aller Themen</a><a class="zurueck" href="{{ site.baseurl }}/informationen/">{{ site.termine.linktext }} →</a></p>
+{%- comment -%}
+Nummer dieses Themas in der Übersichtsliste bestimmen, damit der Rückweg
+nicht an den Seitenanfang, sondern zu genau diesem Listeneintrag führt.
+Die Zählung muss derselben Sortierung folgen wie in uebersicht.html.
+{%- endcomment -%}
+{%- assign alle = site.themen | sort: "reihenfolge" -%}
+{%- assign nr = 0 -%}
+{%- for x in alle -%}{%- if x.url == page.url -%}{%- assign nr = forloop.index -%}{%- endif -%}{%- endfor -%}
+<p class="seitenwechsel"><a class="zurueck" href="{{ site.baseurl }}/{% if nr > 0 %}#thema-{{ nr }}{% endif %}">← Übersicht aller Themen</a><a class="zurueck" href="{{ site.baseurl }}/informationen/">{{ site.termine.linktext }} →</a></p>
 {%- assign roemisch = "I,II,III,IV,V,VI,VII,VIII,IX,X" | split: "," -%}
 {%- assign idx = page.block_nr | minus: 1 -%}
-<p class="blockname">Block {{ roemisch[idx] }} · {{ page.block_titel }}</p>
+<p class="blockname"><span class="bnr">Block {{ roemisch[idx] }} ·</span> {{ page.block_titel }}</p>
 {%- assign t = page.title -%}
 {%- assign unter = "" -%}
 {%- if t contains ": " -%}
@@ -31,6 +39,7 @@
 <div class="inhalt">
 {{ content }}
 </div>
-<footer>{{ site.title }} · {{ site.untertitel }}</footer>
+{%- assign fussteile = site.untertitel | split: " · " -%}
+<footer>{{ site.title }}{% for t in fussteile %} <span class="fuss-teil">· {{ t }}</span>{% endfor %}</footer>
 </body>
 </html>

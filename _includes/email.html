@@ -1,1 +1,6 @@
-{%- assign m1 = site.email | strip -%}{%- assign m2 = site.email2 | strip -%}{%- if m1 != "" -%}<a href="mailto:{{ m1 }}">{{ m1 }}</a>{%- endif -%}{%- if m1 != "" and m2 != "" %} oder {% endif -%}{%- if m2 != "" -%}<a href="mailto:{{ m2 }}">{{ m2 }}</a>{%- endif -%}
+{%- comment -%}
+Kontaktadressen.
+  {% include email.html %}              beide Adressen, Hauptadresse zuerst
+  {% include email.html nur="haupt" %}  nur site.email
+{%- endcomment -%}
+{%- assign m1 = site.email | strip -%}{%- assign m2 = site.email2 | strip -%}{%- if include.nur == "haupt" -%}{%- assign m2 = "" -%}{%- endif -%}{%- if m1 != "" -%}<a href="mailto:{{ m1 }}">{{ m1 }}</a>{%- endif -%}{%- if m1 != "" and m2 != "" %} oder {% endif -%}{%- if m2 != "" -%}<a href="mailto:{{ m2 }}">{{ m2 }}</a>{%- endif -%}
