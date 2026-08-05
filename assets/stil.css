@@ -599,9 +599,6 @@ nav.sprung a::before {
    die Marke eines solchen Paares zählt für die Spaltenbreite nicht mit. */
 .paare .voll { grid-column: 1 / -1; }
 .paare span.voll:not(.f) { padding-left: 1.1rem; }
-/* Volle Breite, aber auf der Fluchtlinie der Marken statt eingerückt:
-   für Angaben, die selbst wie eine Marke lesen („digital als PDF …“). */
-.paare .voll.ohne-einzug { padding-left: 0; }
 
 /* Eine Angabe je Zeile, mit hängendem Einzug: bricht sie um, steht die
    Fortsetzung unter der Adresse und nicht unter der Untermarke „an:“ */
@@ -741,13 +738,6 @@ footer {
     gap: .3rem .7rem;
   }
   .paare .f { font-size: .9em; }
-  /* Trägt der Wert selbst Untermarken („an:“/„cc:“), konkurrieren Marke und
-     Wert um eine Breite, die am Handy nicht reicht: die Spur wird auf ihr
-     Minimum gedrückt und die nicht umbrechende Marke läuft in die Wertspalte,
-     wo sie auf der Untermarke liegt. Deshalb hier Marke über den Wert –
-     dieselbe Lösung wie bei „Beginn:“, nur auf die Handyansicht beschränkt. */
-  .paare .voll-handy { grid-column: 1 / -1; }
-  .paare span.voll-handy:not(.f) { padding-left: 1.1rem; }
   .inhalt th, .inhalt td { padding: .45rem .6rem; }
   ol.themen li { gap: .55rem; }
   ol.themen .nr { min-width: 1.5rem; }
