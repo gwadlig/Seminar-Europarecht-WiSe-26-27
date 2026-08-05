@@ -11,7 +11,7 @@ Am 3.&nbsp;Dezember 2025 hat die Union das Übereinkommen des Europarats über d
 
 ## Rechtsgrundlagen und Primärquellen
 
-- [Richtlinie (EU) 2024/1203](http://data.europa.eu/eli/dir/2024/1203/oj) v.&nbsp;11.4.2024 über den strafrechtlichen Schutz der Umwelt, ABl. L, 2024/1203, 30.4.2024 (Umsetzungsfrist 21.5.2026)
+- [Richtlinie (EU) 2024/1203](http://data.europa.eu/eli/dir/2024/1203/oj) v.&nbsp;11.4.2024 über den strafrechtlichen Schutz der Umwelt, ABl.&nbsp;L, 2024/1203, 30.4.2024 (Umsetzungsfrist 21.5.2026)
 - [Übereinkommen des Europarats über den Schutz der Umwelt durch das Strafrecht, CETS Nr.&nbsp;228](https://www.coe.int/en/web/cdpc/convention-on-the-protection-of-the-environment-through-criminal-law), angenommen v.&nbsp;14.5.2025, zur Zeichnung aufgelegt am 3.12.2025
 - [Erläuternder Bericht zum Übereinkommen des Europarats über den Schutz der Umwelt durch das Strafrecht](https://rm.coe.int/1680b5de56), CETS Nr.&nbsp;228, Straßburg 3.12.2025
 

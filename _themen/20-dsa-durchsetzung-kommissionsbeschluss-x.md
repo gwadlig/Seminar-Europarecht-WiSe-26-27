@@ -1,5 +1,5 @@
 ---
-title: "Der erste DSA-Bußgeldbeschluss gegen X: Wer kontrolliert die Durchsetzung durch die Kommission?"
+title: "Der erste DSA-Bußgeldbeschluss gegen X: Wer kontrolliert die Durchsetzung durch&nbsp;die&nbsp;Kommission?"
 block_nr: 5
 block_titel: "Rechtsschutz und Durchsetzung"
 reihenfolge: 200
@@ -15,8 +15,8 @@ Geldbußen ergingen inzwischen auch gegen Temu und AliExpress, dort wegen unzure
 
 - [Verordnung (EU) 2022/2065](http://data.europa.eu/eli/reg/2022/2065/oj) v.&nbsp;19.10.2022 über einen Binnenmarkt für digitale Dienste (Gesetz über digitale Dienste, DSA)
 - [Durchführungsverordnung (EU) 2023/1201](http://data.europa.eu/eli/reg_impl/2023/1201/oj) der Kommission v.&nbsp;21.6.2023 über Einzelheiten der Durchführung bestimmter Verfahren nach der Verordnung (EU) 2022/2065
-- Kommission, Beschl. v.&nbsp;25.4.2023, [C(2023) 2721 final](https://ec.europa.eu/newsroom/dae/redirection/document/101016) (Benennung von Twitter als sehr große Online-Plattform nach Art.&nbsp;33 Abs.&nbsp;4 DSA)
-- Kommission, Beschl. v.&nbsp;5.12.2025, [C(2025) 8630 final](https://ec.europa.eu/newsroom/dae/redirection/document/128762), Sachen DSA.100101–100103 (X), nichtvertrauliche Fassung; Pressemitteilung [IP/25/2934](https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_25_2934/IP_25_2934_EN.pdf); eine abweichend geschwärzte Fassung veröffentlichte am 28.1.2026 der [Justizausschuss des US-Repräsentantenhauses](https://judiciary.house.gov/sites/evo-subsites/republicans-judiciary.house.gov/files/2026-01/ACT_part1.pdf)
+- Kommission, Beschl. v.&nbsp;25.4.2023, [C(2023) 2721&nbsp;final](https://ec.europa.eu/newsroom/dae/redirection/document/101016) (Benennung von Twitter als sehr große Online-Plattform nach Art.&nbsp;33 Abs.&nbsp;4 DSA)
+- Kommission, Beschl. v.&nbsp;5.12.2025, [C(2025) 8630&nbsp;final](https://ec.europa.eu/newsroom/dae/redirection/document/128762), Sachen DSA.100101–100103 (X), nichtvertrauliche Fassung; Pressemitteilung [IP/25/2934](https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_25_2934/IP_25_2934_EN.pdf); eine abweichend geschwärzte Fassung veröffentlichte am 28.1.2026 der [Justizausschuss des US&#8209;Repräsentantenhauses](https://judiciary.house.gov/sites/evo-subsites/republicans-judiciary.house.gov/files/2026-01/ACT_part1.pdf)
 - Kommission, Mitteilungen v. [15.7.2026](https://digital-strategy.ec.europa.eu/en/news/commission-accepts-xs-corrective-measures-terminate-breaches-dsa) (Annahme der Abhilfemaßnahmen zum blauen Häkchen) und [16.7.2026](https://digital-strategy.ec.europa.eu/en/news/commission-accepts-xs-action-plan-comply-digital-services-act) (Annahme des Aktionsplans zu Werbearchiv und Datenzugang)
 - EuG, Rs.&nbsp;[T-114/26](http://data.europa.eu/eli/C/2026/2390/oj) (X Internet und X Holdings ./. Kommission), Rs.&nbsp;[T-120/26](http://data.europa.eu/eli/C/2026/2391/oj) (X.AI Holdings ./. Kommission) und Rs.&nbsp;[T-121/26](http://data.europa.eu/eli/C/2026/2392/oj) (Musk ./. Kommission), Klagen v.&nbsp;16.2.2026, ABl.-Bekanntmachungen v.&nbsp;4.5.2026
 - EuG, Urt. v.&nbsp;19.11.2025, Rs.&nbsp;[T-367/23](https://curia.europa.eu/juris/liste.jsf?num=T-367/23) (Amazon EU ./. Kommission)

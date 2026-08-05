@@ -1,11 +1,11 @@
 ---
-title: "Darf die EU über Löhne mitbestimmen? Die Mindestlohnrichtlinie vor dem EuGH"
+title: "Darf die EU über Löhne mitbestimmen? Die&nbsp;Mindestlohnrichtlinie vor dem EuGH"
 block_nr: 1
 block_titel: "Rechtsgrundlage und Verfahren"
 reihenfolge: 30
 ---
 
-Der Gerichtshof (Große Kammer) hat mit Urteil vom 11.11.2025 in der Rechtssache C-19/23 (Dänemark ./. Parlament und Rat) über die Nichtigkeitsklage Dänemarks gegen die Richtlinie (EU) 2022/2041 über angemessene Mindestlöhne entschieden; Schweden war dem Verfahren als Streithelfer beigetreten. Die Richtlinie legt keine Lohnhöhe fest, sondern verpflichtet Mitgliedstaaten mit gesetzlichen Mindestlöhnen auf Verfahren: Festlegung und Aktualisierung anhand klar definierter Kriterien sowie Bewertung der Angemessenheit anhand von Referenzwerten (Art.&nbsp;5). Art.&nbsp;153 AEUV überträgt der Union sozialpolitische Kompetenzen, nimmt in Absatz 5 aber vier Materien aus, darunter das Arbeitsentgelt und das Koalitionsrecht.
+Der Gerichtshof (Große Kammer) hat mit Urteil vom 11.11.2025 in der Rechtssache C-19/23 (Dänemark ./. Parlament und Rat) über die Nichtigkeitsklage Dänemarks gegen die Richtlinie (EU) 2022/2041 über angemessene Mindestlöhne entschieden; Schweden war dem Verfahren als Streithelfer beigetreten. Die Richtlinie legt keine Lohnhöhe fest, sondern verpflichtet Mitgliedstaaten mit gesetzlichen Mindestlöhnen auf Verfahren: Festlegung und Aktualisierung anhand klar definierter Kriterien sowie Bewertung der Angemessenheit anhand von Referenzwerten (Art.&nbsp;5). Art.&nbsp;153 AEUV überträgt der Union sozialpolitische Kompetenzen, nimmt in Absatz&nbsp;5 aber vier Materien aus, darunter das Arbeitsentgelt und das Koalitionsrecht.
 
 Entgegen den Schlussanträgen von Generalanwalt Emiliou vom 14.1.2025, der die vollständige Nichtigerklärung vorgeschlagen hatte, erklärte der Gerichtshof nur drei Bestandteile des Art.&nbsp;5 für nichtig: den Kriterienkatalog des Abs.&nbsp;2, den darauf verweisenden Satzteil in Abs.&nbsp;1 Satz 5 und den Vorbehalt am Ende des Abs.&nbsp;3, wonach automatische Indexierung nicht zu einer Senkung des gesetzlichen Mindestlohns führen darf. Nur insoweit liege ein unmittelbarer Eingriff (direct interference) in die Festlegung des Arbeitsentgelts vor. Im Übrigen wies er die Klage ab: Die Tarifförderungspflichten des Art.&nbsp;4 – deren Nichtigerklärung Dänemark hilfsweise beantragt und der Generalanwalt hilfsweise befürwortet hatte – und die Referenzwerte des Art.&nbsp;5 Abs.&nbsp;4 blieben bestehen; auch die Rügen zum Koalitionsrecht und zur Rechtsgrundlage blieben erfolglos.
 
@@ -15,7 +15,7 @@ Der Generalanwalt hatte seinen Maßstab aus dem Grundsatz entwickelt, dass Kompe
 
 - [Richtlinie (EU) 2022/2041](http://data.europa.eu/eli/dir/2022/2041/oj) v.&nbsp;19.10.2022 über angemessene Mindestlöhne in der Europäischen Union
 - EuGH (GK), Urt. v.&nbsp;11.11.2025, Rs.&nbsp;[C-19/23](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:62023CJ0019) (Dänemark ./. Parlament und Rat)
-- [Schlussanträge GA Emiliou](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:62023CC0019) v.&nbsp;14.1.2025, Rs. C-19/23
+- [Schlussanträge GA Emiliou](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:62023CC0019) v.&nbsp;14.1.2025, Rs.&nbsp;C-19/23
 
 ## Kurzbeiträge zum Thema
 

@@ -1,5 +1,5 @@
 ---
-title: "Die EU-Entwaldungsverordnung: Entwaldungsfreie Lieferketten als Bedingung für den Marktzugang"
+title: "Die EU&#8209;Entwaldungsverordnung: Entwaldungsfreie Lieferketten als Bedingung für den Marktzugang"
 block_nr: 4
 block_titel: "Unionsrecht jenseits der Außengrenzen"
 reihenfolge: 150
@@ -13,11 +13,11 @@ Bei Rohstoffen aus Ländern mit geringem Risiko entfallen Risikobewertung und Ri
 
 ## Rechtsgrundlagen und Primärquellen
 
-- [Verordnung (EU) 2023/1115](https://eur-lex.europa.eu/legal-content/DE/AUTO/?uri=CELEX:02023R1115-20251226) v.&nbsp;31.5.2023 über entwaldungsfreie Produkte (EUDR), ABl. L 150 v.&nbsp;9.6.2023
-- [Änderungsverordnung (EU) 2025/2650](http://data.europa.eu/eli/reg/2025/2650/oj) v.&nbsp;19.12.2025 hinsichtlich bestimmter Pflichten von Marktteilnehmern und Händlern, ABl. L, 2025/2650, 23.12.2025 (zuvor: [Verordnung (EU) 2024/3234](http://data.europa.eu/eli/reg/2024/3234/oj))
+- [Verordnung (EU) 2023/1115](https://eur-lex.europa.eu/legal-content/DE/AUTO/?uri=CELEX:02023R1115-20251226) v.&nbsp;31.5.2023 über entwaldungsfreie Produkte (EUDR), ABl.&nbsp;L 150 v.&nbsp;9.6.2023
+- [Änderungsverordnung (EU) 2025/2650](http://data.europa.eu/eli/reg/2025/2650/oj) v.&nbsp;19.12.2025 hinsichtlich bestimmter Pflichten von Marktteilnehmern und Händlern, ABl.&nbsp;L, 2025/2650, 23.12.2025 (zuvor: [Verordnung (EU) 2024/3234](http://data.europa.eu/eli/reg/2024/3234/oj))
 - [Durchführungsverordnung (EU) 2025/1093](http://data.europa.eu/eli/reg_impl/2025/1093/oj) v.&nbsp;22.5.2025 zur Einstufung der Länder nach Risikokategorien
-- [Bericht der Kommission über die Vereinfachungsüberprüfung](https://environment.ec.europa.eu/document/download/a3c5c3a0-232e-43c4-b0b8-1eecb1df45c7_en) nach Art.&nbsp;34 Abs.&nbsp;1a EUDR, COM(2026) 191 final v.&nbsp;4.5.2026
-- [Delegierte Verordnung der Kommission C(2026) 4920 final](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=PI_COM:C(2026)4920) v.&nbsp;13.7.2026 zur Änderung des Anhangs I der VO (EU) 2023/1115 hinsichtlich der Liste der relevanten Rohstoffe und Erzeugnisse (angenommen, noch nicht im Amtsblatt veröffentlicht)
+- [Bericht der Kommission über die Vereinfachungsüberprüfung](https://environment.ec.europa.eu/document/download/a3c5c3a0-232e-43c4-b0b8-1eecb1df45c7_en) nach Art.&nbsp;34 Abs.&nbsp;1a EUDR, COM(2026) 191&nbsp;final v.&nbsp;4.5.2026
+- [Delegierte Verordnung der Kommission C(2026) 4920&nbsp;final](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=PI_COM:C(2026)4920) v.&nbsp;13.7.2026 zur Änderung des Anhangs I der VO (EU) 2023/1115 hinsichtlich der Liste der relevanten Rohstoffe und Erzeugnisse (angenommen, noch nicht im Amtsblatt veröffentlicht)
 - WTO, Ausschuss für technische Handelshemmnisse, [Specific Trade Concern ID 807](https://tradeconcerns.wto.org/en/stcs/details?imsId=807&domainId=TBT) (European Union – Regulation (EU) 2023/1115), laufend seit November 2023
 
 ## Kurzbeiträge zum Thema

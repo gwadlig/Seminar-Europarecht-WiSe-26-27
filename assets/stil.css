@@ -65,6 +65,8 @@ header.kopf .dachzeile {
 }
 /* Die Teile der Dachzeile brechen nur an den Trennpunkten um */
 .dachzeile span { white-space: nowrap; }
+/* Kurzfassungen von Beschriftungen: erscheinen erst in der Handyansicht */
+.kurz { display: none; }
 header.kopf h1 {
   color: var(--akzent);
   font-size: 2.4rem;
@@ -88,7 +90,9 @@ header.kopf .kontakt {
   color: var(--grau);
   margin: 0;
 }
-header.kopf .kontakt .adressen { display: block; }
+/* Adressen unter dem Namen: eigene Zeile je Adresse, mit etwas Luft
+   nach oben, damit der Block nicht am Namen klebt */
+header.kopf .kontakt .adressen { display: block; margin-top: .35rem; }
 /* Linkzeile im Kopf */
 header.kopf p.mehr {
   margin: 2.6rem 0 0;
@@ -121,11 +125,30 @@ h2.blocktitel {
   margin: 2.6rem 0 .7rem;
 }
 details.block > summary {
-  display: block;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
   cursor: pointer;
   list-style: none;
 }
 details.block > summary::-webkit-details-marker { display: none; }
+/* Der Aufklappwinkel steht außerhalb des Textflusses. Als ::after am Ende
+   der Überschrift verhielt er sich wie ein weiteres Wort und rutschte bei
+   langen Titeln allein in die nächste Zeile. */
+details.block .pfeil {
+  flex-shrink: 0;
+  width: .62rem;
+  height: .62rem;
+  margin: .5rem .15rem 0 0;
+  border-right: 2px solid var(--akzent-h);
+  border-bottom: 2px solid var(--akzent-h);
+  transform: rotate(45deg);
+  transition: transform .15s, border-color .15s;
+}
+details.block[open] .pfeil { transform: rotate(-135deg); margin-top: .78rem; }
+details.block > summary:hover .pfeil,
+details.block > summary:focus-visible .pfeil { border-color: var(--akzent); }
 details.block h2.blocktitel {
   border-top: 0;
   padding-top: 0;
@@ -138,25 +161,11 @@ h2.blocktitel {
   line-height: 1.3;
   color: var(--text);
   hyphens: none;
-}
-details.block h2.blocktitel::after {
-  content: "";
-  display: inline-block;
-  width: .4em;
-  height: .4em;
-  margin-left: .6em;
-  border-right: 1.5px solid var(--grau);
-  border-bottom: 1.5px solid var(--grau);
-  transform: translateY(-.2em) rotate(45deg);
-  transition: transform .15s, border-color .15s;
-}
-details.block[open] h2.blocktitel::after {
-  transform: translateY(.05em) rotate(-135deg);
+  /* muss der Titel umbrechen, dann zwei möglichst gleich lange Zeilen */
+  text-wrap: balance;
 }
 details.block > summary:hover h2.blocktitel,
 details.block > summary:focus-visible h2.blocktitel { color: var(--akzent); }
-details.block > summary:hover h2.blocktitel::after,
-details.block > summary:focus-visible h2.blocktitel::after { border-color: var(--akzent); }
 h2.blocktitel .blocknr {
   display: block;
   font-size: .72rem;
@@ -217,7 +226,7 @@ ol.themen li:target {
     box-shadow: 0 0 0 .4rem var(--kasten);
   }
 }
-ol.themen a { text-decoration: none; }
+ol.themen a { text-decoration: none; text-wrap: balance; }
 ol.themen a:hover { text-decoration: underline; text-decoration-color: currentColor; }
 
 /* Linkzeile unter dem Einleitungsabsatz */
@@ -232,6 +241,8 @@ p.mehr {
   hyphens: none;
 }
 p.mehr a { color: var(--akzent); text-decoration: none; }
+/* größerer Pfeil ohne Einfluss auf die Zeilenhöhe */
+p.mehr .weiterpfeil { font-size: 1.3em; line-height: 0; }
 p.mehr a:hover { text-decoration: underline; }
 p.mehr .frist {
   display: block;
@@ -311,12 +322,16 @@ p.mehr .frist {
 .zurueck:hover { color: var(--akzent); text-decoration: underline; }
 
 /* Kopfzeile der Themenseiten: zurueck links, Informationsseite rechts */
+/* Kopfzeile der Themenseiten. Die Haarlinie setzt sie vom Thema ab –
+   ohne sie stehen die beiden Links über dem Titel in der Luft. */
 p.seitenwechsel {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: .6rem 1.5rem;
   margin: 0 0 1.8rem;
+  padding-bottom: .9rem;
+  border-bottom: 1px solid var(--linie-h);
 }
 p.seitenwechsel .zurueck { margin-bottom: 0; }
 
@@ -568,24 +583,30 @@ nav.sprung a::before {
   gap: .3rem .8rem;
   align-items: baseline;
 }
-/* Nebeneinander richtet sich die Wertspalte nach der längsten Marke der
-   Zelle. Wo eine lange Marke („Abgabetermin:“) die Werte kurzer Marken
-   („digital:“) nach rechts schiebt, fehlt der E-Mail-Adresse der Platz.
-   .breit stellt deshalb Marke über Wert – der Wert rückt an die Marke
-   heran und bekommt die volle Zellenbreite. */
-.paare.breit > * { grid-column: 1 / -1; }
-.paare.breit { row-gap: .1rem; }
-.paare.breit > span:not(.f) { padding-left: 1.1rem; }
-.paare.breit > .f:not(:first-child) { margin-top: .6rem; }
+/* Adressblock im Fließtext: die Marken sind kurz („an:“), die Spur der
+   Tabelle wäre hier unnötig breit. */
+.inhalt-seite .paare {
+  margin: .6rem 0 1.3rem;
+  font-size: 1.04rem;
+}
+.paare.schmal { grid-template-columns: minmax(2.4em, max-content) 1fr; }
 
-/* Eine Angabe je Zeile, mit hängendem Einzug: bricht sie um – etwa bei
-   zwei E-Mail-Adressen – steht die Fortsetzung unter der ersten Adresse
-   und nicht unter der Untermarke „an:“ */
+/* Ein einzelnes Paar über die volle Zellenbreite. Nötig, wenn eine lange
+   Marke die Spalte breit macht und daneben für den Wert kein Platz bliebe;
+   die Marke eines solchen Paares zählt für die Spaltenbreite nicht mit. */
+.paare .voll { grid-column: 1 / -1; }
+.paare span.voll:not(.f) { padding-left: 1.1rem; }
+
+/* Eine Angabe je Zeile, mit hängendem Einzug: bricht sie um, steht die
+   Fortsetzung unter der Adresse und nicht unter der Untermarke „an:“ */
 .paare .zeile {
   display: block;
   padding-left: 2em;
   text-indent: -2em;
 }
+
+/* Mehrere Adressen stehen untereinander, nicht mit „oder“ verbunden */
+.adr { display: block; }
 
 /* Zeilenkopf halbfett, Feldmarke mager, Untermarke kursiv */
 .paare .f { color: var(--grau); white-space: nowrap; font-weight: normal; }
@@ -594,6 +615,41 @@ nav.sprung a::before {
   min-width: 2em;
   color: var(--grau);
   font-style: italic;
+}
+
+/* Formalia nach Seminartyp statt dreispaltiger Tabelle: die Tabelle
+   brauchte am Handy 572 px bei rund 455 px Zeilenbreite. Am Laptop zwei
+   Blöcke nebeneinander, am Handy untereinander. */
+.formalia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 2.2rem;
+  margin: 1.1rem 0 1.8rem;
+}
+.formalia .typ {
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin: 0 0 .55rem;
+  padding-bottom: .35rem;
+  border-bottom: 1px solid var(--linie-h);
+  hyphens: none;
+}
+.formalia dl { margin: 0; }
+.formalia dt {
+  font-size: .92rem;
+  color: var(--grau);
+  margin-top: .75rem;
+  hyphens: none;
+}
+.formalia dt:first-child { margin-top: 0; }
+.formalia dd {
+  margin: .1rem 0 0;
+  font-size: 1.04rem;
+  line-height: 1.45;
+  hyphens: none;
 }
 
 /* --- 7 Fuß ---------------------------------------------------------------- */
@@ -615,6 +671,10 @@ footer {
   /* .12em Sperrung kosten hier 75 px – genau die 19 px, an denen die
      Zeile scheitert, und noch etwas Reserve */
   header.kopf .dachzeile { margin-bottom: .8rem; letter-spacing: .06em; }
+  /* „Wintersemester 2026/27“ braucht 461 px, „WiSe 26/27“ nur 335 px;
+     die beiden Kopflinks der Themenseite 472 statt 325 px */
+  .lang { display: none; }
+  .kurz { display: inline; }
   header.kopf h1 { font-size: 1.75rem; }
   header.kopf .titelzusatz { font-size: 1.18em; margin-bottom: 1.5rem; }
   header.kopf .kontakt { text-align: left; }
@@ -633,6 +693,7 @@ footer {
   nav.sprung { font-size: 1rem; gap: .3rem; padding: .7rem 0; margin-bottom: 1.7rem; }
   nav.sprung > div { flex-direction: column; gap: .3rem; }
   .inhalt table { font-size: .92rem; }
+  .formalia { grid-template-columns: 1fr; gap: 1.4rem; }
   /* am Handy als Tippfläche etwas größer */
   .inhalt-seite h2 .hoch { width: 2.4rem; height: 2.4rem; font-size: 1rem; }
   /* Dachzeile und Fuß sagen dasselbe zweimal. Am Handy trägt die
@@ -648,21 +709,9 @@ footer {
     gap: .3rem .7rem;
   }
   .paare .f { font-size: .9em; }
-  /* Ausnahme: E-Mail-Adressen. Sie sind für die schmale Wertspalte zu
-     lang und brächen mitten im Wort – also volle Breite unter der Marke,
-     leicht eingerückt, damit die Zugehörigkeit sichtbar bleibt. */
-  .paare > .f:has(+ span:has(a[href^="mailto"])),
-  .paare > span:has(a[href^="mailto"]) { grid-column: 1 / -1; }
-  .paare > span:has(a[href^="mailto"]) { padding-left: .5rem; }
-  /* am Handy zählt jedes Pixel Breite für die Adresse */
-  .paare.breit > span:not(.f) { padding-left: .5rem; }
   .inhalt th, .inhalt td { padding: .45rem .6rem; }
   ol.themen li { gap: .55rem; }
   ol.themen .nr { min-width: 1.5rem; }
-  /* Die beiden Kopfzeilen-Links liegen untereinander; space-between wirkt
-     dann nicht mehr, also den zweiten ausdrücklich nach rechts. */
-  p.seitenwechsel { flex-direction: column; }
-  p.seitenwechsel > :last-child { align-self: flex-end; }
 
   /* Termintabelle: zu schmal für zwei Spalten, daher Zeile für Zeile
      gestapelt – Beschriftung über dem Wert, jeweils volle Breite.
@@ -698,17 +747,16 @@ footer {
   .inhalt table.termine td:last-child { padding-left: .9rem; }
 
   /* Zeilen ohne Feldmarken (Seminarleitung, E-Mail, Büro, Sprechstunde,
-     Moodle-Kurs): Kopf und Wert laufen in einer Zeile weiter, statt für
-     „Büro – wird hier ergänzt“ zwei Zeilen zu verbrauchen. Reicht die
-     Breite nicht, bricht der Wert mit hängendem Einzug um. */
+     Moodle-Kurs): Kopf und Wert nebeneinander. Die Spurbreite ist fest,
+     damit alle diese Werte an derselben Stelle beginnen – im Fließsatz
+     begänne jeder woanders, je nach Länge des Kopfes. */
   .inhalt table.termine tr:not(:has(.paare)) {
-    padding-left: 1.2rem;
-    text-indent: -1.2rem;
+    display: grid;
+    grid-template-columns: minmax(9.2rem, max-content) 1fr;
+    column-gap: .7rem;
+    align-items: baseline;
   }
-  .inhalt table.termine tr:not(:has(.paare)) td { display: inline; }
-  .inhalt table.termine tr:not(:has(.paare)) td:first-child {
-    margin: 0 .55em 0 0;
-  }
+  .inhalt table.termine tr:not(:has(.paare)) td:first-child { margin-bottom: 0; }
   .inhalt table.termine tr:not(:has(.paare)) td:last-child { padding-left: 0; }
   /* „Blockseminar (2 SWS)“ in einer Zeile statt zweier */
   .inhalt table.termine .zwei { display: inline; }
@@ -722,7 +770,7 @@ footer {
   body { font-size: 10.5pt; max-width: none; padding: 0; color: #000; }
   a { color: #000; text-decoration: none; }
   .zurueck, p.seitenwechsel, p.mehr, .blockbeschreibung, nav.sprung, .hoch { display: none; }
-  details.block h2.blocktitel::after { display: none; }
+  details.block .pfeil { display: none; }
   h2.blocktitel, h1.thema { break-after: avoid; page-break-after: avoid; }
   ol.themen li, .inhalt li { break-inside: avoid; page-break-inside: avoid; }
   .inhalt table { break-inside: avoid; page-break-inside: avoid; }

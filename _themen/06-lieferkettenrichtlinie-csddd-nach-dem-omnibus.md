@@ -1,5 +1,5 @@
 ---
-title: "Die Lieferkettenrichtlinie (CSDDD) nach dem Omnibus"
+title: "Die Lieferkettenrichtlinie (CSDDD) nach&nbsp;dem&nbsp;Omnibus"
 block_nr: 2
 block_titel: "Die Omnibus-Gesetzgebung: Vereinfachung als Rückbau?"
 reihenfolge: 60
@@ -13,7 +13,7 @@ Ob nationale Sorgfaltspflichtengesetze mit niedrigeren Schwellenwerten oder stre
 
 ## Rechtsgrundlagen und Primärquellen
 
-- [Richtlinie (EU) 2026/470](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026L0470) v.&nbsp;24.2.2026 zur Änderung der Richtlinien 2006/43/EG, 2013/34/EU, (EU) 2022/2464 und (EU) 2024/1760 (ABl. L, 2026/470, 26.2.2026), und [Richtlinie (EU) 2024/1760](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02024L1760-20260318) (CSDDD) in der dadurch geänderten Fassung (konsolidierte Fassung v.&nbsp;18.3.2026)
+- [Richtlinie (EU) 2026/470](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026L0470) v.&nbsp;24.2.2026 zur Änderung der Richtlinien 2006/43/EG, 2013/34/EU, (EU) 2022/2464 und (EU) 2024/1760 (ABl.&nbsp;L, 2026/470, 26.2.2026), und [Richtlinie (EU) 2024/1760](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02024L1760-20260318) (CSDDD) in der dadurch geänderten Fassung (konsolidierte Fassung v.&nbsp;18.3.2026)
 - Tribunal judiciaire de Paris, Urt. v.&nbsp;25.6.2026, [Notre Affaire à Tous u.a. ./. TotalEnergies SE](https://notreaffaireatous.org/wp-content/uploads/2026/06/22.3403-Jugement-25.06.26.pdf)
 - Gerechtshof Den Haag, Urt. v.&nbsp;12.11.2024, [Milieudefensie u.a. ./. Shell plc](https://admin.climatecasechart.com/wp-content/uploads/non-us-case-documents/2024/20241112_8918_judgment.pdf)
 - Europäische Bürgerbeauftragte, [Empfehlung v.&nbsp;25.11.2025](https://www.ombudsman.europa.eu/en/recommendation/en/215920) und [Entscheidung v.&nbsp;25.6.2026](https://www.ombudsman.europa.eu/en/decision/de/228151) (Fall 983/2025/MAS)

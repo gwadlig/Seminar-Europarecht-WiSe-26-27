@@ -1,10 +1,12 @@
 # Grundeinstellungen
-title: "Unionsrecht unter Handlungsdruck"
+title: "Unionsrecht unter&nbsp;Handlungsdruck"
 titelzusatz: "Verteidigung, Klima, Migration, Digitales"
 untertitel: "Seminar zum Europarecht · Wintersemester 2026/27"
+# Kurzform des Semesters; erscheint statt der langen nur in der Handyansicht
+semester_kurz: "WiSe 26/27"
 lehrende: "Dr. Gabriele Wadlig, LL.M. (NYU)"
 # Kurzform für die Überblickstabelle; leer lassen um die long form zu nutzen
-lehrende_kurz: "Dr. Gabriele Wadlig"
+lehrende_kurz: "Gabriele Wadlig"
 
 # Kontakt
 # email ist die Hauptadresse: sie steht überall zuerst und ist die
@@ -22,7 +24,7 @@ termine:
   anmeldeschluss: "Sonntag, 6.&nbsp;September 2026, 20&nbsp;Uhr"
   vorbesprechung: "7.&nbsp;bis&nbsp;11.&nbsp;September 2026"
   vorbesprechung_termin: ""
-  vorbesprechung_zugang: "Zugangsdaten erhalten Sie nach Ablauf der Anmeldefrist per E-Mail"
+  vorbesprechung_zugang: "Zugangsdaten erhalten Sie nach Ablauf der Anmeldefrist per E&#8209;Mail"
   block: "in der zweiten Januarhälfte 2027"
   block_hinweis: "genaue Termine folgen und werden hier ergänzt"
 
@@ -33,16 +35,18 @@ termine:
   abgabe_offen: "finden Sie nach der Vorbesprechung hier"
 
   linktext: "Anmeldung, Termine und Formalia"
+  # Kurzfassung für die Handyansicht der Themenseiten
+  linktext_kurz: "Anmeldung und Formalia"
   linkzusatz: ""
 
 # Angaben für die Überblickstabelle
 seminar:
   lehrform: "Blockseminar"
-  sws: "2 SWS"
+  sws: "2&nbsp;SWS"
   raum: ""
-  fachsemester: "Zulassungsseminar (ZS) ab dem 5. Fachsemester; Prüfungsseminar (PS) ab dem 6. Fachsemester"
+  fachsemester: "Zulassungsseminar (ZS) ab dem 5.&nbsp;Fachsemester; Prüfungsseminar (PS) ab dem 6.&nbsp;Fachsemester"
   schwerpunkt: "als ZS in allen Bereichen; als PS primär im SPB 4"
-  moodle: ""
+  moodle: "https://moodle2.uni-leipzig.de/course/view.php?id=61403"
   buero: ""
   sprechstunde: ""
 

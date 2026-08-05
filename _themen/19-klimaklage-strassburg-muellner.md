@@ -1,11 +1,11 @@
 ---
-title: "Klimaklage in Straßburg: Welche Rolle spielt das EU-Recht?"
+title: "Klimaklage in Straßburg: Welche Rolle spielt das EU&#8209;Recht?"
 block_nr: 5
 block_titel: "Rechtsschutz und Durchsetzung"
 reihenfolge: 190
 ---
 
-Gegenstand ist die beim EGMR anhängige Individualbeschwerde M. Müllner ./. Österreich (Nr.&nbsp;18859/21, kommuniziert am 18.6.2024; eine Entscheidung steht aus, Stand Juli 2026). Der Beschwerdeführer leidet an Multipler Sklerose mit Uhthoff-Syndrom; ab etwa 25 °C ist er nach seinem Vorbringen auf einen Rollstuhl, ab etwa 30 °C zusätzlich auf fremde Hilfe angewiesen. Gerügt wird nach Art.&nbsp;8, 6 und 13 EMRK das Fehlen eines hinreichenden Klimaschutzrahmens und eines Rechtsbehelfs dagegen. Der innerstaatliche Individualantrag richtete sich, weil gesetzgeberisches Unterlassen innerstaatlich nicht anfechtbar ist, gegen Steuerbegünstigungen des Luftverkehrs, darunter die unionsrechtlich vorgegebene Kerosinsteuerbefreiung (Art.&nbsp;14 Abs.&nbsp;1 lit. b RL 2003/96/EG).
+Gegenstand ist die beim EGMR anhängige Individualbeschwerde M. Müllner ./. Österreich (Nr.&nbsp;18859/21, kommuniziert am 18.6.2024; eine Entscheidung steht aus, Stand Juli 2026). Der Beschwerdeführer leidet an Multipler Sklerose mit Uhthoff-Syndrom; ab etwa 25 °C ist er nach seinem Vorbringen auf einen Rollstuhl, ab etwa 30 °C zusätzlich auf fremde Hilfe angewiesen. Gerügt wird nach Art.&nbsp;8, 6 und 13 EMRK das Fehlen eines hinreichenden Klimaschutzrahmens und eines Rechtsbehelfs dagegen. Der innerstaatliche Individualantrag richtete sich, weil gesetzgeberisches Unterlassen innerstaatlich nicht anfechtbar ist, gegen Steuerbegünstigungen des Luftverkehrs, darunter die unionsrechtlich vorgegebene Kerosinsteuerbefreiung (Art.&nbsp;14 Abs.&nbsp;1 lit.&nbsp;b RL 2003/96/EG).
 
 Nach übereinstimmenden Berichten über das schriftliche Verfahren stützt sich Österreich auf die Erfüllung unionsrechtlicher Minderungspflichten und auf die Bosphorus-Vermutung. Diese greift nur, soweit dem Mitgliedstaat kein Spielraum bleibt; Europäisches Klimagesetz und Lastenteilungsverordnung beruhen auf Art.&nbsp;192 Abs.&nbsp;1 AEUV, und Art.&nbsp;193 AEUV erlaubt strengere nationale Maßnahmen. Materiell ist die Vermutung erst widerlegt, wenn der Schutz offensichtlich unzureichend ist: Die Verordnung (EU) 2026/667 legt für 2040 −90 % Nettoemissionen gegenüber 1990 fest, lässt ab 2036 internationale Gutschriften bis zu 5 % der Nettoemissionen von 1990 zu (unionsintern mindestens −85 %); der ESABCC hatte 90–95 % empfohlen. Prozedural setzt die Vermutung voraus, dass der unionsgerichtliche Kontrollmechanismus sein volles Potenzial entfalten konnte. Die Nichtigkeitsklage Einzelner scheitert nach Carvalho (C-565/19 P) regelmäßig an der individuellen Betroffenheit, und ein vorlagefähiges Verfahren besteht in Österreich praktisch nicht.
 
@@ -23,9 +23,9 @@ Ob die Vermutung das Unionsklimarecht damit gerade dort gegen eine Kontrolle in 
 
 ### Zur Orientierung
 
-- *Caligara*, [Key Implications of the Next ECHR Climate Case, Müllner v. Austria](https://verfassungsblog.de/key-implications-of-the-next-echr-climate-case-mullner-v-austria/), Verfassungsblog 18.6.2026
-- *Glas/Krommendijk*, [Third Party Intervention before the ECtHR in the case Müllner v. Austria](https://hdl.handle.net/2066/315917), Drittbeteiligungsschriftsatz v.&nbsp;5.12.2024
-- *Rundel*, [Inadmissibility Decisions after KlimaSeniorinnen: Hope Remains for Müllner v. Austria](https://www.ejiltalk.org/inadmissibility-decisions-after-klimaseniorinnen-hope-remains-for-mullner-v-austria-as-the-next-successful-climate-case-before-the-ecthr/), EJIL:Talk! 26.9.2025
+- *Caligara*, [Key Implications of the Next ECHR Climate Case, Müllner v.&nbsp;Austria](https://verfassungsblog.de/key-implications-of-the-next-echr-climate-case-mullner-v-austria/), Verfassungsblog 18.6.2026
+- *Glas/Krommendijk*, [Third Party Intervention before the ECtHR in the case Müllner v.&nbsp;Austria](https://hdl.handle.net/2066/315917), Drittbeteiligungsschriftsatz v.&nbsp;5.12.2024
+- *Rundel*, [Inadmissibility Decisions after KlimaSeniorinnen: Hope Remains for Müllner v.&nbsp;Austria](https://www.ejiltalk.org/inadmissibility-decisions-after-klimaseniorinnen-hope-remains-for-mullner-v-austria-as-the-next-successful-climate-case-before-the-ecthr/), EJIL:Talk! 26.9.2025
 - *Eeckhout*, [From Strasbourg to Luxembourg? The KlimaSeniorinnen judgment and EU remedies](https://verfassungsblog.de/from-strasbourg-to-luxembourg/), Verfassungsblog 5.6.2024
 
 ### Weitere Beiträge

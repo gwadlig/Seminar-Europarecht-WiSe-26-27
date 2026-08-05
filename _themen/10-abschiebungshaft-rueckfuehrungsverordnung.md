@@ -1,7 +1,7 @@
 ---
 title: "Abschiebungshaft in der neuen Rückführungsverordnung"
 block_nr: 3
-block_titel: "Beschleunigung und Verlagerung im neuen Migrationsrecht"
+block_titel: "Beschleunigung und Verlagerung im&nbsp;neuen Migrationsrecht"
 reihenfolge: 100
 ---
 
@@ -9,14 +9,14 @@ Das Europäische Parlament hat die am 1.&nbsp;Juni 2026 im Trilog erzielte Einig
 
 Gegenüber der Richtlinie erweitert der vom Parlament angenommene Text die Abschiebungshaft in mehreren Punkten. Der Katalog der Haftgründe wächst. Die Kriterien für die Annahme von Fluchtgefahr werden erstmals unionsweit festgelegt und mit einer widerleglichen Vermutung verbunden. Beides bleibt für Ergänzungen im nationalen Recht offen. Die Höchstdauer steigt von 18 auf 24, in bestimmten Fällen auf bis zu 30&nbsp;Monate; bei Sekundärmigration in einen anderen Mitgliedstaat kann eine neue Haftfrist beginnen. Die Richtlinie verpflichtet ausdrücklich zur Freilassung, sobald keine Aussicht auf Abschiebung mehr besteht (Art.&nbsp;15 Abs.&nbsp;4). Eine entsprechende Vorschrift enthält die Verordnung nicht. Für als Sicherheitsrisiko eingestufte Personen gilt ein Sonderregime: Unterbringung in Gefängnissen, Trennung von Strafgefangenen nur soweit möglich, Haft über die Höchstdauer hinaus. Hinzu treten Durchsuchungs- und Beschlagnahmebefugnisse sowie Sanktionen, die bis zur Freiheitsstrafe reichen.
 
-Diskutiert wird vor allem die Vereinbarkeit dieser Regelungen mit Art.&nbsp;6 GRC und Art.&nbsp;5 Abs.&nbsp;1 lit. f EMRK sowie die Frage, ob die Grenze zwischen Verwaltungshaft (administrative detention) und Strafhaft verwischt, ohne dass die Betroffenen strafprozessuale Garantien erhalten.
+Diskutiert wird vor allem die Vereinbarkeit dieser Regelungen mit Art.&nbsp;6 GRC und Art.&nbsp;5 Abs.&nbsp;1 lit.&nbsp;f EMRK sowie die Frage, ob die Grenze zwischen Verwaltungshaft (administrative detention) und Strafhaft verwischt, ohne dass die Betroffenen strafprozessuale Garantien erhalten.
 
 ## Rechtsgrundlagen und Primärquellen
 
 - [Rückführungsverordnung](https://www.europarl.europa.eu/RegData/seance_pleniere/textes_adoptes/definitif/2026/06-17/0207/P10_TA(2026)0207_DE.pdf) (Annahme durch das Europäische Parlament v.&nbsp;17.6.2026; förmliche Annahme durch den Rat und Veröffentlichung im Amtsblatt stehen aus)
 - [Verfahren 2025/0059(COD)](https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file?reference=2025/0059(COD))
 - EuGH, Urt. v.&nbsp;16.4.2026, verb. Rs.&nbsp;[C-50/24 bis C-56/24](https://curia.europa.eu/juris/liste.jsf?num=C-50/24) (Danané u.a.)
-- [Richtlinie (EU) 2024/1346](http://data.europa.eu/eli/dir/2024/1346/oj) v.&nbsp;14.5.2024 zur Festlegung von Normen für die Aufnahme von Personen, die internationalen Schutz beantragen (Neufassung), ABl. L, 2024/1346, 22.5.2024 (Aufnahmerichtlinie; Haft von Antragstellern in Art.&nbsp;10–13)
+- [Richtlinie (EU) 2024/1346](http://data.europa.eu/eli/dir/2024/1346/oj) v.&nbsp;14.5.2024 zur Festlegung von Normen für die Aufnahme von Personen, die internationalen Schutz beantragen (Neufassung), ABl.&nbsp;L, 2024/1346, 22.5.2024 (Aufnahmerichtlinie; Haft von Antragstellern in Art.&nbsp;10–13)
 
 ## Kurzbeiträge zum Thema
 

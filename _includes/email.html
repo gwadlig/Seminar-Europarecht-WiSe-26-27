@@ -1,6 +1,21 @@
 {%- comment -%}
 Kontaktadressen.
-  {% include email.html %}              beide Adressen, Hauptadresse zuerst
-  {% include email.html nur="haupt" %}  nur site.email
+  {% include email.html %}               beide Adressen, mit „oder“ verbunden
+  {% include email.html nur="haupt" %}   nur site.email
+  {% include email.html form="zeilen" %} beide Adressen untereinander
+
+Im angezeigten Text steht nach dem @ ein <wbr>. Muss die Adresse umbrechen,
+dann nur dort und nicht mitten im Namen. Die mailto-Adresse bleibt unberührt.
 {%- endcomment -%}
-{%- assign m1 = site.email | strip -%}{%- assign m2 = site.email2 | strip -%}{%- if include.nur == "haupt" -%}{%- assign m2 = "" -%}{%- endif -%}{%- if m1 != "" -%}<a href="mailto:{{ m1 }}">{{ m1 }}</a>{%- endif -%}{%- if m1 != "" and m2 != "" %} oder {% endif -%}{%- if m2 != "" -%}<a href="mailto:{{ m2 }}">{{ m2 }}</a>{%- endif -%}
+{%- assign m1 = site.email | strip -%}
+{%- assign m2 = site.email2 | strip -%}
+{%- if include.nur == "haupt" -%}{%- assign m2 = "" -%}{%- endif -%}
+{%- assign t1 = m1 | replace: "@", "@<wbr>" -%}
+{%- assign t2 = m2 | replace: "@", "@<wbr>" -%}
+{%- if include.form == "zeilen" and m1 != "" and m2 != "" -%}
+<span class="adr"><a href="mailto:{{ m1 }}">{{ t1 }}</a></span><span class="adr"><a href="mailto:{{ m2 }}">{{ t2 }}</a></span>
+{%- else -%}
+{%- if m1 != "" -%}<a href="mailto:{{ m1 }}">{{ t1 }}</a>{%- endif -%}
+{%- if m1 != "" and m2 != "" %} oder {% endif -%}
+{%- if m2 != "" -%}<a href="mailto:{{ m2 }}">{{ t2 }}</a>{%- endif -%}
+{%- endif -%}

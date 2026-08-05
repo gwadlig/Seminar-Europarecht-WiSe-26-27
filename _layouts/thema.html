@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ page.title }}</title>
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/stil.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/stil.css?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
 </head>
 <body>
 {%- comment -%}
@@ -15,7 +15,8 @@ Die Zählung muss derselben Sortierung folgen wie in uebersicht.html.
 {%- assign alle = site.themen | sort: "reihenfolge" -%}
 {%- assign nr = 0 -%}
 {%- for x in alle -%}{%- if x.url == page.url -%}{%- assign nr = forloop.index -%}{%- endif -%}{%- endfor -%}
-<p class="seitenwechsel"><a class="zurueck" href="{{ site.baseurl }}/{% if nr > 0 %}#thema-{{ nr }}{% endif %}">← Übersicht aller Themen</a><a class="zurueck" href="{{ site.baseurl }}/informationen/">{{ site.termine.linktext }} →</a></p>
+{%- assign lk = site.termine.linktext_kurz | strip -%}
+<p class="seitenwechsel"><a class="zurueck" href="{{ site.baseurl }}/{% if nr > 0 %}#thema-{{ nr }}{% endif %}">← <span class="lang">Übersicht aller Themen</span><span class="kurz">Alle Themen</span></a><a class="zurueck" href="{{ site.baseurl }}/informationen/">{% if lk != "" %}<span class="lang">{{ site.termine.linktext }}</span><span class="kurz">{{ lk }}</span>{% else %}{{ site.termine.linktext }}{% endif %} →</a></p>
 {%- assign roemisch = "I,II,III,IV,V,VI,VII,VIII,IX,X" | split: "," -%}
 {%- assign idx = page.block_nr | minus: 1 -%}
 <p class="blockname"><span class="bnr">Block {{ roemisch[idx] }} ·</span> {{ page.block_titel }}</p>

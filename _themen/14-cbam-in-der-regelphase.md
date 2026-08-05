@@ -1,11 +1,11 @@
 ---
-title: "Der CO₂-Grenzausgleich (CBAM) in der Regelphase"
+title: "Der CO₂&#8209;Grenzausgleich (CBAM) in&nbsp;der&nbsp;Regelphase"
 block_nr: 4
 block_titel: "Unionsrecht jenseits der Außengrenzen"
 reihenfolge: 140
 ---
 
-Das CO₂-Grenzausgleichssystem nach der Verordnung (EU) 2023/956, geändert durch die Verordnung (EU) 2025/2083 zur Vereinfachung und Stärkung des Mechanismus, verpflichtet Einführer von Zement, Eisen und Stahl, Aluminium, Düngemitteln, Strom und Wasserstoff, Zertifikate für die in den Waren enthaltenen grauen Emissionen (embedded emissions) abzugeben. Die Regelphase, der endgültige CBAM-Zeitraum, läuft seit dem 1.&nbsp;Januar 2026. Die Abgabepflicht bemisst sich spiegelbildlich zur kostenlosen Zuteilung im Emissionshandel: Der CBAM-Faktor beträgt 2026 noch 97,5 % und läuft bis 2034 aus, sodass der abgabepflichtige Anteil von 2,5 % auf 100 % steigt. Verkauf und Abgabe der Zertifikate für das erste Berichtsjahr beginnen erst 2027.
+Das CO₂&#8209;Grenzausgleichssystem nach der Verordnung (EU) 2023/956, geändert durch die Verordnung (EU) 2025/2083 zur Vereinfachung und Stärkung des Mechanismus, verpflichtet Einführer von Zement, Eisen und Stahl, Aluminium, Düngemitteln, Strom und Wasserstoff, Zertifikate für die in den Waren enthaltenen grauen Emissionen (embedded emissions) abzugeben. Die Regelphase, der endgültige CBAM-Zeitraum, läuft seit dem 1.&nbsp;Januar 2026. Die Abgabepflicht bemisst sich spiegelbildlich zur kostenlosen Zuteilung im Emissionshandel: Der CBAM-Faktor beträgt 2026 noch 97,5 % und läuft bis 2034 aus, sodass der abgabepflichtige Anteil von 2,5 % auf 100 % steigt. Verkauf und Abgabe der Zertifikate für das erste Berichtsjahr beginnen erst 2027.
 
 Nach außen ist das Instrument streitig. Die Russische Föderation hat am 12.&nbsp;Mai 2025 Konsultationen verlangt (WT/DS639), die die Union am 22.&nbsp;Mai 2025 unter Verweis auf den russischen Angriffskrieg abgelehnt hat; den ersten Antrag auf Einsetzung eines Panels hat die Union am 24.&nbsp;Juli 2026 im Streitbeilegungsgremium blockiert. Indien hat kein Streitverfahren eingeleitet, aber zwischen 2020 und 2024 wiederholt im Ausschuss für Handel und Umwelt Einwände erhoben. Die Kritik richtet sich auch gegen die Ausgestaltung: Ohne verifizierte Ist-Daten greifen um einen Aufschlag erhöhte Standardwerte (default values), und akkreditierte Prüfer sind bislang kaum verfügbar. Ob diese Ausgestaltung dem Chapeau des Art.&nbsp;XX GATT genügt, ist offen.
 
@@ -13,8 +13,8 @@ Nach innen verengt die Novelle den Kreis der Verpflichteten. Ihre De-minimis-Sch
 
 ## Rechtsgrundlagen und Primärquellen
 
-- [Verordnung (EU) 2023/956](http://data.europa.eu/eli/reg/2023/956/oj) v.&nbsp;10.5.2023 zur Schaffung eines CO₂-Grenzausgleichssystems (ABl. L 130/52), geändert durch [Verordnung (EU) 2025/2083](http://data.europa.eu/eli/reg/2025/2083/oj) v.&nbsp;8.10.2025 (ABl. L, 2025/2083, 17.10.2025); die De-minimis-Schwelle in Art.&nbsp;2a i.&nbsp;V.&nbsp;m. Anhang VII Nr.&nbsp;1
-- [Vorschlag der Kommission v.&nbsp;26.2.2025 für eine Verordnung zur Änderung der Verordnung (EU) 2023/956 hinsichtlich einer Vereinfachung und Stärkung des CO₂-Grenzausgleichssystems, COM(2025) 87 final, 2025/0039(COD)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=celex:52025PC0087)
+- [Verordnung (EU) 2023/956](http://data.europa.eu/eli/reg/2023/956/oj) v.&nbsp;10.5.2023 zur Schaffung eines CO₂&#8209;Grenzausgleichssystems (ABl.&nbsp;L 130/52), geändert durch [Verordnung (EU) 2025/2083](http://data.europa.eu/eli/reg/2025/2083/oj) v.&nbsp;8.10.2025 (ABl.&nbsp;L, 2025/2083, 17.10.2025); die De-minimis-Schwelle in Art.&nbsp;2a i.&nbsp;V.&nbsp;m. Anhang VII Nr.&nbsp;1
+- [Vorschlag der Kommission v.&nbsp;26.2.2025 für eine Verordnung zur Änderung der Verordnung (EU) 2023/956 hinsichtlich einer Vereinfachung und Stärkung des CO₂&#8209;Grenzausgleichssystems, COM(2025) 87&nbsp;final, 2025/0039(COD)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=celex:52025PC0087)
 - Durchführungspaket zur Regelphase: [Del-VO (EU) 2025/2551](http://data.europa.eu/eli/reg_del/2025/2551/oj) v.&nbsp;20.11.2025 (Akkreditierung der Prüfer); [DVO (EU) 2025/2547](http://data.europa.eu/eli/reg_impl/2025/2547/oj) v.&nbsp;10.12.2025 (Berechnung grauer Emissionen); [DVO (EU) 2025/2621](http://data.europa.eu/eli/reg_impl/2025/2621/oj) v.&nbsp;16.12.2025 (Standardwerte)
 - WTO, *European Union and its Member States – Carbon Border Adjustment Mechanism* (Russische Föderation), [WT/DS639](https://www.wto.org/english/tratop_e/dispu_e/cases_e/ds639_e.htm); Konsultationsersuchen v.&nbsp;12.5.2025, Ablehnung durch die Union v.&nbsp;22.5.2025, Antrag auf Einsetzung eines Panels v.&nbsp;14.7.2026, [WT/DS639/3](https://docs.wto.org/dol2fe/Pages/SS/directdoc.aspx?filename=q:/WT/DS/639-3.pdf&Open=True)
 

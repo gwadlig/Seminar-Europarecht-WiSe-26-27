@@ -1,7 +1,7 @@
 ---
-title: "Das Italien-Albanien-Protokoll: Asyl- und Rückkehrverfahren auf fremdem Staatsgebiet"
+title: "Das Italien-Albanien-Protokoll: Asyl- und&nbsp;Rückkehrverfahren auf fremdem Staatsgebiet"
 block_nr: 3
-block_titel: "Beschleunigung und Verlagerung im neuen Migrationsrecht"
+block_titel: "Beschleunigung und Verlagerung im&nbsp;neuen Migrationsrecht"
 reihenfolge: 120
 ---
 

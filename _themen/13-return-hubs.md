@@ -1,7 +1,7 @@
 ---
 title: "Die „Return Hubs“: Abschiebung in ein Land ohne jede Verbindung"
 block_nr: 3
-block_titel: "Beschleunigung und Verlagerung im neuen Migrationsrecht"
+block_titel: "Beschleunigung und Verlagerung im&nbsp;neuen Migrationsrecht"
 reihenfolge: 130
 ---
 
@@ -11,12 +11,12 @@ Was in einem solchen Return Hub geschieht, regelt die Verordnung nicht selbst, s
 
 Nach der Definition des Rückkehrstaats (Art.&nbsp;4) ist die Rückkehr mit der Ankunft im Return Hub vollzogen; daraus wird gefolgert, dass die Garantien der Verordnung dort nicht mehr greifen.
 
-Woran der Aufenthalt dann zu messen ist, ist umstritten, denn die Charta bindet die Mitgliedstaaten nur bei der Durchführung des Rechts der Union. Erwägungsgrund 23 hält allerdings fest: „Diese Abkommen oder Vereinbarungen stellen eine Durchführung des Rechts der Union im Sinne von Artikel 51 Absatz 1 der Charta dar.“ Ob damit auch der Betrieb der Einrichtungen erfasst ist, bleibt offen.
+Woran der Aufenthalt dann zu messen ist, ist umstritten, denn die Charta bindet die Mitgliedstaaten nur bei der Durchführung des Rechts der Union. Erwägungsgrund 23 hält allerdings fest: „Diese Abkommen oder Vereinbarungen stellen eine Durchführung des Rechts der Union im Sinne von Artikel&nbsp;51 Absatz&nbsp;1 der Charta dar.“ Ob damit auch der Betrieb der Einrichtungen erfasst ist, bleibt offen.
 
 ## Rechtsgrundlagen und Primärquellen
 
 - [Rückführungsverordnung](https://www.europarl.europa.eu/RegData/seance_pleniere/textes_adoptes/definitif/2026/06-17/0207/P10_TA(2026)0207_DE.pdf) (Annahme durch das Europäische Parlament v.&nbsp;17.6.2026; förmliche Annahme durch den Rat und Veröffentlichung im Amtsblatt stehen aus)
-- [Vorschlag der Kommission v.&nbsp;11.3.2025, COM(2025) 101 final/2](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52025PC0101(01))
+- [Vorschlag der Kommission v.&nbsp;11.3.2025, COM(2025) 101&nbsp;final/2](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52025PC0101(01))
 - [Verfahren 2025/0059(COD)](https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file?reference=2025/0059(COD))
 - Agentur der Europäischen Union für Grundrechte, [Planned return hubs in third countries: EU fundamental rights law issues](https://fra.europa.eu/en/publication/2025/return-hubs), FRA Position Paper, Wien 2025 (v.&nbsp;6.2.2025)
 

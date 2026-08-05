@@ -1,5 +1,5 @@
 ---
-title: "Mercosur und die Kontrolle über EU-Handelsverträge"
+title: "Mercosur und die Kontrolle über&nbsp;EU&#8209;Handelsverträge"
 block_nr: 1
 block_titel: "Rechtsgrundlage und Verfahren"
 reihenfolge: 20
@@ -15,25 +15,25 @@ Der Vorgang steht nicht allein: Das Änderungsabkommen mit Marokko über Zollpr�
 
 - [Entschließung des Europäischen Parlaments](https://www.europarl.europa.eu/doceo/document/TA-10-2026-0008_EN.html) v.&nbsp;21.1.2026, P10_TA(2026)0008 (B10-0060/2026), Verfahren 2026/2560(RSP); dazu der abgelehnte Entschließungsantrag [B10-0061/2026](https://www.europarl.europa.eu/doceo/document/B-10-2026-0061_EN.html), der zusätzlich die vorläufige Anwendung beanstandet
 - [Beschluss (EU) 2026/183](http://data.europa.eu/eli/dec/2026/183/oj) des Rates v.&nbsp;9.1.2026 über die Unterzeichnung und die vorläufige Anwendung des Interimshandelsabkommens; [Beschluss (EU) 2026/185](http://data.europa.eu/eli/dec/2026/185/oj) des Rates v.&nbsp;9.1.2026 über die Unterzeichnung und die vorläufige Anwendung des Partnerschaftsabkommens
-- [Interimshandelsabkommen EU–Mercosur (ITA)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22026A00184), ABl. L 2026/184 v.&nbsp;27.2.2026; [Partnerschaftsabkommen EU–Mercosur (EMPA)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:22026A00186), ABl. L 2026/186 v.&nbsp;27.2.2026
-- EuGH, [Gutachten 1/26](http://data.europa.eu/eli/C/2026/3152/oj), Antrag des Europäischen Parlaments nach Art.&nbsp;218 Abs.&nbsp;11 AEUV, ABl. C/2026/3152 v.&nbsp;22.6.2026
-- EuGH, Rs.&nbsp;[C-460/26](http://data.europa.eu/eli/C/2026/3166/oj) (Polen ./. Rat), Klage v.&nbsp;10.5.2026 gegen den Beschluss (EU) 2026/183, ABl. C/2026/3166 v.&nbsp;22.6.2026
-- [Schlussfolgerungen des Rates v.&nbsp;22.5.2018 über die Aushandlung und den Abschluss von EU-Handelsabkommen](https://data.consilium.europa.eu/doc/document/ST-8622-2018-INIT/de/pdf), Ratsdok. 8622/18
+- [Interimshandelsabkommen EU–Mercosur (ITA)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22026A00184), ABl.&nbsp;L 2026/184 v.&nbsp;27.2.2026; [Partnerschaftsabkommen EU–Mercosur (EMPA)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:22026A00186), ABl.&nbsp;L 2026/186 v.&nbsp;27.2.2026
+- EuGH, [Gutachten 1/26](http://data.europa.eu/eli/C/2026/3152/oj), Antrag des Europäischen Parlaments nach Art.&nbsp;218 Abs.&nbsp;11 AEUV, ABl.&nbsp;C/2026/3152 v.&nbsp;22.6.2026
+- EuGH, Rs.&nbsp;[C-460/26](http://data.europa.eu/eli/C/2026/3166/oj) (Polen ./. Rat), Klage v.&nbsp;10.5.2026 gegen den Beschluss (EU) 2026/183, ABl.&nbsp;C/2026/3166 v.&nbsp;22.6.2026
+- [Schlussfolgerungen des Rates v.&nbsp;22.5.2018 über die Aushandlung und den Abschluss von EU&#8209;Handelsabkommen](https://data.consilium.europa.eu/doc/document/ST-8622-2018-INIT/de/pdf), Ratsdok. 8622/18
 - [Beschluss (EU) 2025/2022](http://data.europa.eu/eli/dec/2025/2022/oj) des Rates v.&nbsp;2.10.2025 über die Unterzeichnung und die vorläufige Anwendung des Abkommens in Form eines Briefwechsels zur Änderung der Protokolle 1 und 4 zum Assoziierungsabkommen EU–Marokko (vorläufig angewandt seit 3.10.2025), dazu die [konsolidierte Fassung des Assoziierungsabkommens v.&nbsp;3.10.2025](https://eur-lex.europa.eu/legal-content/DE/AUTO/?uri=CELEX:02000A0318(01)-20251003)
-- EuG, Rs.&nbsp;[T-907/25](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:62025TN0907) (Front Polisario ./. Rat), Klage v.&nbsp;26.12.2025 gegen den [Beschluss (EU) 2025/2023](http://data.europa.eu/eli/dec/2025/2023/oj) des Rates v.&nbsp;2.10.2025 (Standpunkt im Assoziationsrat, Art.&nbsp;218 Abs.&nbsp;9 AEUV), verbunden mit einer Einrede der Rechtswidrigkeit gegen den Beschluss (EU) 2025/2022; ABl. C/2026/1227 v.&nbsp;9.3.2026
+- EuG, Rs.&nbsp;[T-907/25](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:62025TN0907) (Front Polisario ./. Rat), Klage v.&nbsp;26.12.2025 gegen den [Beschluss (EU) 2025/2023](http://data.europa.eu/eli/dec/2025/2023/oj) des Rates v.&nbsp;2.10.2025 (Standpunkt im Assoziationsrat, Art.&nbsp;218 Abs.&nbsp;9 AEUV), verbunden mit einer Einrede der Rechtswidrigkeit gegen den Beschluss (EU) 2025/2022; ABl.&nbsp;C/2026/1227 v.&nbsp;9.3.2026
 - EuGH, Urt. v.&nbsp;4.10.2024, verb. Rs.&nbsp;[C-779/21 P und C-799/21 P](https://curia.europa.eu/juris/liste.jsf?num=C-779/21) (Kommission und Rat ./. Front Polisario)
 
 ## Kurzbeiträge zum Thema
 
 ### Zur Orientierung
 
-- *Pelliconi/von Massow*, [How Not to Trade with Occupying Powers: Western Sahara and the Amendment to the EU-Moroccan Association Agreements](https://www.ejiltalk.org/how-not-to-trade-with-occupying-powers-western-sahara-and-the-amendment-to-the-eu-moroccan-association-agreements/), EJIL:Talk! 16.10.2025
+- *Pelliconi/von Massow*, [How Not to Trade with Occupying Powers: Western Sahara and the Amendment to the EU&#8209;Moroccan Association Agreements](https://www.ejiltalk.org/how-not-to-trade-with-occupying-powers-western-sahara-and-the-amendment-to-the-eu-moroccan-association-agreements/), EJIL:Talk! 16.10.2025
 - *Kübek*, [Has the European Parliament Shot Itself in the Foot?](https://verfassungsblog.de/shot-itself-in-the-foot/), Verfassungsblog 18.2.2026
-- *Lejeune*, [Back to the Pre-Lisbon era? Why the Provisional Application of the EU-Mercosur Agreement is so Controversial](https://www.ejiltalk.org/back-to-the-pre-lisbon-era-why-the-provisional-application-of-the-eu-mercosur-agreement-is-so-controversial/), EJIL:Talk! 23.2.2026
-- *Schramm*, [From Capacity to Necessity: The Provisional Application of the EU-Mercosur Agreement](https://verfassungsblog.de/from-capacity-to-necessity/), Verfassungsblog 13.3.2026
+- *Lejeune*, [Back to the Pre-Lisbon era? Why the Provisional Application of the EU&#8209;Mercosur Agreement is so Controversial](https://www.ejiltalk.org/back-to-the-pre-lisbon-era-why-the-provisional-application-of-the-eu-mercosur-agreement-is-so-controversial/), EJIL:Talk! 23.2.2026
+- *Schramm*, [From Capacity to Necessity: The Provisional Application of the EU&#8209;Mercosur Agreement](https://verfassungsblog.de/from-capacity-to-necessity/), Verfassungsblog 13.3.2026
 
 ### Weitere Beiträge
 
 - *Eckes*, [The ECJ's Opportunity to Address the EU's Climate Mitigation Obligations](https://verfassungsblog.de/ecjs-eus-climate-mitigation-obligations-mercosur/), Verfassungsblog 18.9.2025
-- *Harrison/Paulini*, [The Revised EU-Mercosur Trade Deal: Does it Adequately Address Trade-Environment-Development Interlinkages?](https://www.ejiltalk.org/the-revised-eu-mercosur-trade-deal-does-it-adequately-address-trade-environment-development-interlinkages/), EJIL:Talk! 24.9.2025
+- *Harrison/Paulini*, [The Revised EU&#8209;Mercosur Trade Deal: Does it Adequately Address Trade-Environment-Development Interlinkages?](https://www.ejiltalk.org/the-revised-eu-mercosur-trade-deal-does-it-adequately-address-trade-environment-development-interlinkages/), EJIL:Talk! 24.9.2025
 - *Tedesco Andretta/Schilling*, [Splitting the EU–Mercosur Agreement: Institutional Strategy and Legal Questions Before the CJEU](https://eulawlive.com/op-ed-splitting-the-eu-mercosur-agreement-institutional-strategy-and-legal-questions-before-the-cjeu/), EU Law Live 17.4.2026

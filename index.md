@@ -2,7 +2,7 @@
 layout: uebersicht
 ---
 
-Seit einigen Jahren steht die Europäische Union unter erheblichem Handlungsdruck. Pandemie, Energie- und Klimakrise, der Krieg in der Ukraine und die Auseinandersetzung um Fluchtmigration haben Forderungen nach schnellen Entscheidungen verstärkt. Zugleich sieht sich die EU in einem verschärften wirtschaftlichen und technologischen Wettbewerb vor allem mit den USA und China. EU-Recht gilt dabei zunehmend als Belastung für Unternehmen und als Hindernis für Investitionen und Innovation. Unter den Vorzeichen von Krisenbewältigung und Wettbewerbsfähigkeit werden deshalb gegenwärtig zahlreiche Bereiche des Unionsrechts neu geordnet.
+Seit einigen Jahren steht die Europäische Union unter erheblichem Handlungsdruck. Pandemie, Energie- und Klimakrise, der Krieg in der Ukraine und die Auseinandersetzung um Fluchtmigration haben Forderungen nach schnellen Entscheidungen verstärkt. Zugleich sieht sich die EU in einem verschärften wirtschaftlichen und technologischen Wettbewerb vor allem mit den USA und China. EU&#8209;Recht gilt dabei zunehmend als Belastung für Unternehmen und als Hindernis für Investitionen und Innovation. Unter den Vorzeichen von Krisenbewältigung und Wettbewerbsfähigkeit werden deshalb gegenwärtig zahlreiche Bereiche des Unionsrechts neu geordnet.
 
 Die EU soll schneller und wirksamer handeln, bleibt aber an Zuständigkeiten, Verfahren und Grundrechte gebunden. Über die Politikfelder hinweg zeichnen sich dabei ähnliche Entwicklungen ab, in der Entstehung des Rechts, in seiner Reichweite und in seiner Kontrolle.
 

@@ -1,7 +1,7 @@
 ---
 title: "Der Solidaritätsmechanismus des neuen Asylsystems"
 block_nr: 3
-block_titel: "Beschleunigung und Verlagerung im neuen Migrationsrecht"
+block_titel: "Beschleunigung und Verlagerung im&nbsp;neuen Migrationsrecht"
 reihenfolge: 90
 ---
 

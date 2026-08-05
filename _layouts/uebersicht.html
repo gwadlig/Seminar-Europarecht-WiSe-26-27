@@ -4,23 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ site.title }}</title>
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/stil.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/stil.css?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
 </head>
 <body>
 <header class="kopf">
   {%- assign teile = site.untertitel | split: " · " -%}
-  <p class="dachzeile">{% for t in teile %}<span>{% unless forloop.first %}· {% endunless %}{{ t }}</span> {% endfor %}</p>
+  {%- assign sem_kurz = site.semester_kurz | strip -%}
+  <p class="dachzeile"><span>{{ teile.first }}</span>{% if teile.size > 1 %} <span>· <span class="lang">{{ teile.last }}</span>{% if sem_kurz != "" %}<span class="kurz">{{ sem_kurz }}</span>{% endif %}</span>{% endif %}</p>
   <h1>{{ site.title }}</h1>
   <p class="titelzusatz">{{ site.titelzusatz }}</p>
   {%- assign m1 = site.email | strip -%}
   {%- assign m2 = site.email2 | strip -%}
   <p class="kontakt">{{ site.lehrende }}
     {%- if m1 != "" or m2 != "" -%}
-    <span class="adressen">
-      {%- if m1 != "" %}<a href="mailto:{{ m1 }}">{{ m1 }}</a>{% endif -%}
-      {%- if m1 != "" and m2 != "" %} · {% endif -%}
-      {%- if m2 != "" %}<a href="mailto:{{ m2 }}">{{ m2 }}</a>{% endif -%}
-    </span>
+    <span class="adressen">{% include email.html form="zeilen" %}</span>
     {%- endif -%}
   </p>
   <p class="mehr">{% include infolink.html %}</p>
@@ -41,7 +38,7 @@
 {%- assign beschreibung = site.bloecke | where: "nr", t.block_nr | first -%}
 {%- if beschreibung %}
 <details class="block">
-<summary><h2 class="blocktitel"><span class="blocknr">Block {{ roemisch[idx] }}</span>{{ t.block_titel }}</h2></summary>
+<summary><h2 class="blocktitel"><span class="blocknr">Block {{ roemisch[idx] }}</span>{{ t.block_titel }}</h2><span class="pfeil" aria-hidden="true"></span></summary>
 <p class="blockbeschreibung">{{ beschreibung.text | strip }}</p>
 </details>
 {%- else %}
@@ -55,6 +52,7 @@
 {%- endfor %}
 </ol>
 <!-- /themenliste -->
+<p class="mehr">{% include infolink.html %}</p>
 <footer>Stand: {{ site.time | date: "%-d.%-m.%Y" }}</footer>
 </body>
 </html>

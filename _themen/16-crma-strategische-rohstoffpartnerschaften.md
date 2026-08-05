@@ -1,5 +1,5 @@
 ---
-title: "Rohstoffpartnerschaften im Critical Raw Materials Act: Externalisierung der Rohstoffgewinnung?"
+title: "Rohstoffpartnerschaften im Critical Raw Materials Act: Externalisierung der&nbsp;Rohstoffgewinnung?"
 block_nr: 4
 block_titel: "Unionsrecht jenseits der Außengrenzen"
 reihenfolge: 160
@@ -13,14 +13,14 @@ Gegen die Ablehnung der internen Überprüfung solcher Anerkennungen nach der Aa
 
 ## Rechtsgrundlagen und Primärquellen
 
-- [Verordnung (EU) 2024/1252](http://data.europa.eu/eli/reg/2024/1252/oj) v.&nbsp;11.4.2024 (CRMA), ABl. L, 2024/1252 v.&nbsp;3.5.2024
-- [Vorschlag der Kommission v.&nbsp;3.12.2025 zur Änderung der Verordnung (EU) 2024/1252, COM(2025) 946 final, 2025/0385(COD)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52025PC0946)
+- [Verordnung (EU) 2024/1252](http://data.europa.eu/eli/reg/2024/1252/oj) v.&nbsp;11.4.2024 (CRMA), ABl.&nbsp;L, 2024/1252 v.&nbsp;3.5.2024
+- [Vorschlag der Kommission v.&nbsp;3.12.2025 zur Änderung der Verordnung (EU) 2024/1252, COM(2025) 946&nbsp;final, 2025/0385(COD)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52025PC0946)
 - [Memorandum of Understanding on a Partnership on Sustainable Raw Materials Value Chains and Renewable Hydrogen between the European Union and the Republic of Namibia, unterzeichnet am 8.11.2022](https://single-market-economy.ec.europa.eu/system/files/2022-11/MoU-Namibia-batteries-hydrogen.pdf)
 - [Beschluss (EU) 2025/840](http://data.europa.eu/eli/dec/2025/840/oj) der Kommission v.&nbsp;25.3.2025 zur Anerkennung bestimmter Projekte im Bereich kritische Rohstoffe als strategische Projekte, bekanntgegeben unter C(2025) 1904
 - [Beschluss (EU) 2025/1174](http://data.europa.eu/eli/dec/2025/1174/oj) der Kommission v.&nbsp;4.6.2025 zur Anerkennung bestimmter Projekte im Bereich kritische Rohstoffe in Drittländern und in überseeischen Ländern oder Gebieten als strategische Projekte, bekanntgegeben unter C(2025) 3491
 - [Interimsabkommen über den Handel zwischen der Europäischen Union und der Republik Chile](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:22024A02953), in Kraft seit 1.2.2025 (Kapitel Energie und Rohstoffe)
 - EuG, Rs.&nbsp;[T-77/26](https://curia.europa.eu/juris/liste.jsf?num=T-77/26) (AUDCB u.a. ./. Kommission) und Rs.&nbsp;[T-79/26](https://curia.europa.eu/juris/liste.jsf?num=T-79/26) (Ecologistas en Acción ./. Kommission), anhängig
-- [Mitteilung der Kommission zu einer sicheren und nachhaltigen Versorgung mit kritischen Rohstoffen](https://data.consilium.europa.eu/doc/document/ST-7551-2023-INIT/en/pdf), COM(2023) 165 final v.&nbsp;16.3.2023
+- [Mitteilung der Kommission zu einer sicheren und nachhaltigen Versorgung mit kritischen Rohstoffen](https://data.consilium.europa.eu/doc/document/ST-7551-2023-INIT/en/pdf), COM(2023) 165&nbsp;final v.&nbsp;16.3.2023
 
 ## Kurzbeiträge zum Thema
 

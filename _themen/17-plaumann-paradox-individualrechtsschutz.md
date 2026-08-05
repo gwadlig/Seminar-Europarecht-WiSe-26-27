@@ -1,5 +1,5 @@
 ---
-title: "Ein Ausweg aus dem Plaumann-Paradox? Die Klagebefugnis von Vereinigungen vor dem Gerichtshof"
+title: "Ein Ausweg aus dem Plaumann-Paradox? Die&nbsp;Klagebefugnis von Vereinigungen vor&nbsp;dem Gerichtshof"
 block_nr: 5
 block_titel: "Rechtsschutz und Durchsetzung"
 reihenfolge: 170
@@ -15,11 +15,11 @@ Die Zulässigkeitsvoraussetzungen sind nach ständiger Rechtsprechung im Licht d
 
 ## Rechtsgrundlagen und Primärquellen
 
-- EuGH (6. Kammer), Urt. v.&nbsp;25.3.2021, Rs.&nbsp;[C-565/19 P](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:62019CJ0565) (Armando Carvalho u.a. ./. Parlament und Rat)
+- EuGH (6.&nbsp;Kammer), Urt. v.&nbsp;25.3.2021, Rs.&nbsp;[C-565/19 P](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:62019CJ0565) (Armando Carvalho u.a. ./. Parlament und Rat)
 - EuG (GK), Beschl. v.&nbsp;4.6.2024, verb. Rs.&nbsp;[T-530/22](https://curia.europa.eu/juris/liste.jsf?num=T-530/22) bis [T-533/22](https://curia.europa.eu/juris/liste.jsf?num=T-533/22) (Medel u.a. ./. Rat)
 - Schlussanträge GA Ćapeta v.&nbsp;16.4.2026, Rs.&nbsp;[C-555/24 P](https://curia.europa.eu/juris/liste.jsf?num=C-555/24) (Medel u.a. ./. Rat)
 - EuG, Beschl. v.&nbsp;5.9.2025, Rs.&nbsp;[T-482/25](https://curia.europa.eu/juris/liste.jsf?num=T-482/25) (JURDI ./. Rat und Kommission), nicht veröffentlicht; Rechtsmittel [C-726/25 P](https://curia.europa.eu/juris/liste.jsf?num=C-726/25) anhängig
-- EuG (3. Kammer), Beschl. v.&nbsp;3.2.2025, Rs.&nbsp;[T-1126/23](https://curia.europa.eu/juris/liste.jsf?num=T-1126/23) (Asociația Inițiativa pentru Justiție ./. Kommission); Rechtsmittel [C-284/25 P](https://curia.europa.eu/juris/liste.jsf?num=C-284/25) anhängig
+- EuG (3.&nbsp;Kammer), Beschl. v.&nbsp;3.2.2025, Rs.&nbsp;[T-1126/23](https://curia.europa.eu/juris/liste.jsf?num=T-1126/23) (Asociația Inițiativa pentru Justiție ./. Kommission); Rechtsmittel [C-284/25 P](https://curia.europa.eu/juris/liste.jsf?num=C-284/25) anhängig
 - EuGH, Urt. v.&nbsp;18.12.2025, Rs.&nbsp;[C-731/23 P](https://curia.europa.eu/juris/liste.jsf?num=C-731/23) (Nicoventures Trading u.a. ./. Kommission)
 - EGMR (GK), Urt. v.&nbsp;9.4.2024, [Nr.&nbsp;53600/20](https://hudoc.echr.coe.int/eng?i=001-233206), Verein KlimaSeniorinnen Schweiz u.a. ./. Schweiz
 
@@ -36,5 +36,5 @@ Die Zulässigkeitsvoraussetzungen sind nach ständiger Rechtsprechung im Licht d
 
 - *Eeckhout*, [From Strasbourg to Luxembourg? The KlimaSeniorinnen judgment and EU remedies](https://verfassungsblog.de/from-strasbourg-to-luxembourg/), Verfassungsblog 5.6.2024
 - *Täuber*, [Admissibility Revisited: EU climate litigation between Plaumann, Aarhus, and KlimaSeniorinnen](https://verfassungsblog.de/admissibility-revisited/), Verfassungsblog 16.10.2024
-- *Íñiguez*, [The Long and Winding Road: AG Ćapeta's Opinion in Medel and Others v. Council (C-555/24 P)](https://eulawlive.com/op-ed-the-long-and-winding-road-ag-capetas-opinion-in-medel-and-others-v-council-c-555-24-p/), EU Law Live 17.4.2026
+- *Íñiguez*, [The Long and Winding Road: AG Ćapeta's Opinion in Medel and Others v.&nbsp;Council (C-555/24 P)](https://eulawlive.com/op-ed-the-long-and-winding-road-ag-capetas-opinion-in-medel-and-others-v-council-c-555-24-p/), EU Law Live 17.4.2026
 - *Labus*, [The End of Plaumann in Climate Litigation: Now or Never?](https://www.europeanpapers.eu/e-journal/the-end-of-plaumann-in-climate-litigation-now-or-never), European Papers 11 (2026), 219–266 (kein Kurzbeitrag)
