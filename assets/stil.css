@@ -82,17 +82,20 @@ header.kopf .titelzusatz {
   margin: 0 0 2.1rem;
   hyphens: none;
 }
-/* Verfasserzeile: Name, darunter die Adressen */
+/* Verfasserzeile: Name, darunter die Adressen. Der Name steht eine Stufe
+   über den Adressen – größer und in Textfarbe –, sonst wären es drei gleich
+   aussehende graue Zeilen. Die Adressen bleiben grau über die Linkfarbe
+   weiter unten. */
 header.kopf .kontakt {
   hyphens: none;
-  font-size: .87em;
+  font-size: .95em;
   line-height: 1.45;
-  color: var(--grau);
+  color: var(--text);
   margin: 0;
 }
 /* Adressen unter dem Namen: eigene Zeile je Adresse, mit etwas Luft
    nach oben, damit der Block nicht am Namen klebt */
-header.kopf .kontakt .adressen { display: block; margin-top: .35rem; }
+header.kopf .kontakt .adressen { display: block; margin-top: .35rem; font-size: .93em; }
 /* Linkzeile im Kopf */
 header.kopf p.mehr {
   margin: 2.6rem 0 0;
@@ -604,6 +607,10 @@ nav.sprung a::before {
   padding-left: 2em;
   text-indent: -2em;
 }
+/* Zeilen mit Untermarke („an:“, „cc:“) sind eine Ebene unter dem Wert und
+   werden dafür um 1.1em eingerückt: Die Untermarke steht dann nicht mehr
+   bündig mit dem Wert darüber, die Adressen fluchten bei 3.1em. */
+.paare .zeile:has(.fi) { padding-left: 3.1em; }
 
 /* Mehrere Adressen stehen untereinander, nicht mit „oder“ verbunden */
 .adr { display: block; }
@@ -683,6 +690,17 @@ footer {
   .blockname { letter-spacing: .07em; line-height: 1.35; }
   h1.thema { font-size: 1.5rem; }
   .thema-untertitel { font-size: 1.15rem; }
+  /* Der Seitentitel ist hier auf 1.5rem gedeckelt. Blieben Abschnitts-
+     überschriften und Fließtext auf den Werten der Laptopansicht, läge
+     zwischen Titel und h2 nur noch 5 Prozent und zwischen h3 und Text nur
+     13 – die Staffelung wäre keine mehr. Deshalb eine Stufe tiefer:
+     24 / 21,1 / 18,9 / 15,7 px. */
+  .inhalt-seite h2 { font-size: 1.32rem; }
+  .inhalt-seite p,
+  .inhalt-seite li,
+  .inhalt-seite .paare,
+  .inhalt table,
+  .formalia dd { font-size: .98rem; }
   h2.blocktitel { margin-top: 2.2rem; }
   details.block { margin-top: 2.2rem; }
   /* ohne Blocksatz entfällt der Grund für die Silbentrennung */
@@ -771,9 +789,17 @@ footer {
      woanders, je nach Länge des Kopfes. */
   .inhalt table.termine tr:not(:has(.paare)) {
     display: grid;
-    grid-template-columns: minmax(9.2rem, max-content) 1fr;
+    grid-template-columns: 9.2rem 1fr;
     column-gap: .7rem;
     align-items: baseline;
+  }
+  /* Absatz vor dem Blockseminar: Hier wechselt die Darstellung von
+     „Kopf links, Wert rechts“ zu „Kopf oben, Feldmarken darunter“. Die
+     zweite Linie kurz unter der Zeilenlinie markiert den Wechsel. */
+  .inhalt table.termine tr.abschnitt {
+    margin-top: .3rem;
+    padding-top: 1.6rem;
+    border-top: 1px solid var(--linie);
   }
   .inhalt table.termine tr:not(:has(.paare)) td:first-child { margin-bottom: 0; }
   .inhalt table.termine tr:not(:has(.paare)) td:last-child { padding-left: 0; }
