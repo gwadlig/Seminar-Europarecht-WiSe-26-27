@@ -90,12 +90,12 @@ header.kopf .kontakt {
   hyphens: none;
   font-size: .95em;
   line-height: 1.45;
-  color: var(--text);
+  color: var(--grau);
   margin: 0;
 }
 /* Adressen unter dem Namen: eigene Zeile je Adresse, mit etwas Luft
    nach oben, damit der Block nicht am Namen klebt */
-header.kopf .kontakt .adressen { display: block; margin-top: .35rem; font-size: .93em; }
+header.kopf .kontakt .adressen { display: block; margin-top: .4rem; font-size: .89em; }
 /* Linkzeile im Kopf */
 header.kopf p.mehr {
   margin: 2.6rem 0 0;
@@ -599,6 +599,9 @@ nav.sprung a::before {
    die Marke eines solchen Paares zählt für die Spaltenbreite nicht mit. */
 .paare .voll { grid-column: 1 / -1; }
 .paare span.voll:not(.f) { padding-left: 1.1rem; }
+/* Volle Breite, aber auf der Fluchtlinie der Marken statt eingerückt:
+   für Angaben, die selbst wie eine Marke lesen („digital als PDF …“). */
+.paare .voll.ohne-einzug { padding-left: 0; }
 
 /* Eine Angabe je Zeile, mit hängendem Einzug: bricht sie um, steht die
    Fortsetzung unter der Adresse und nicht unter der Untermarke „an:“ */
@@ -607,10 +610,10 @@ nav.sprung a::before {
   padding-left: 2em;
   text-indent: -2em;
 }
-/* Zeilen mit Untermarke („an:“, „cc:“) sind eine Ebene unter dem Wert und
-   werden dafür um 1.1em eingerückt: Die Untermarke steht dann nicht mehr
-   bündig mit dem Wert darüber, die Adressen fluchten bei 3.1em. */
-.paare .zeile:has(.fi) { padding-left: 3.1em; }
+/* Zeilen mit Untermarke: Die Marke gehört unmittelbar vor die Adresse, nicht
+   in eine eigene Spalte links davon. Deshalb hier kein hängender Einzug –
+   die Einrückung der Gruppe leistet schon das umgebende .voll. */
+.paare .zeile:has(.fi) { padding-left: 0; text-indent: 0; }
 
 /* Mehrere Adressen stehen untereinander, nicht mit „oder“ verbunden */
 .adr { display: block; }
@@ -618,8 +621,7 @@ nav.sprung a::before {
 /* Zeilenkopf halbfett, Feldmarke mager, Untermarke kursiv */
 .paare .f { color: var(--grau); white-space: nowrap; font-weight: normal; }
 .paare .fi {
-  display: inline-block;
-  min-width: 2em;
+  margin-right: .35em;
   color: var(--grau);
   font-style: italic;
 }
@@ -771,7 +773,10 @@ footer {
   .inhalt table.termine td:first-child {
     width: auto;
     white-space: normal;
-    font-size: .82em;
+    /* auf die Größe der Feldmarken, nicht darunter: der Zeilenkopf steht in
+       der Rangfolge über ihnen und unterscheidet sich durch Versalien,
+       Halbfette und Sperrung, nicht durch eine kleinere Schrift */
+    font-size: .9em;
     font-weight: 600;
     letter-spacing: .06em;
     text-transform: uppercase;
@@ -783,26 +788,6 @@ footer {
   /* Der ganze Wert eine Stufe eingerückt: er gehört sichtbar zum Kopf */
   .inhalt table.termine td:last-child { padding-left: .9rem; }
 
-  /* Zeilen ohne Feldmarken (Seminarleitung, E-Mail, Büro, Sprechstunde):
-     Kopf und Wert nebeneinander. Die Spurbreite ist fest, damit alle diese
-     Werte an derselben Stelle beginnen – im Fließsatz begänne jeder
-     woanders, je nach Länge des Kopfes. */
-  .inhalt table.termine tr:not(:has(.paare)) {
-    display: grid;
-    grid-template-columns: 9.2rem 1fr;
-    column-gap: .7rem;
-    align-items: baseline;
-  }
-  /* Absatz vor dem Blockseminar: Hier wechselt die Darstellung von
-     „Kopf links, Wert rechts“ zu „Kopf oben, Feldmarken darunter“. Die
-     zweite Linie kurz unter der Zeilenlinie markiert den Wechsel. */
-  .inhalt table.termine tr.abschnitt {
-    margin-top: .3rem;
-    padding-top: 1.6rem;
-    border-top: 1px solid var(--linie);
-  }
-  .inhalt table.termine tr:not(:has(.paare)) td:first-child { margin-bottom: 0; }
-  .inhalt table.termine tr:not(:has(.paare)) td:last-child { padding-left: 0; }
   /* „Blockseminar (2 SWS)“ in einer Zeile statt zweier */
   .inhalt table.termine .zwei { display: inline; }
   .inhalt table.termine .zwei br { display: none; }
