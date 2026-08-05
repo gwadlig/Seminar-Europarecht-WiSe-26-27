@@ -692,8 +692,20 @@ footer {
   /* Sprungmarken untereinander statt in Flatterzeilen */
   nav.sprung { font-size: 1rem; gap: .3rem; padding: .7rem 0; margin-bottom: 1.7rem; }
   nav.sprung > div { flex-direction: column; gap: .3rem; }
-  .inhalt table { font-size: .92rem; }
+  /* Untereinander gestapelt braucht der Block zwölf Zeilen für vier Angaben.
+     Deshalb hier Marke und Wert nebeneinander wie in der Übersichtstabelle.
+     „Bearbeitungszeit“ misst 119 px, der breiteste Wert 181 px: Das geht
+     ab rund 350 px Gerätebreite auf. */
   .formalia { grid-template-columns: 1fr; gap: 1.4rem; }
+  .formalia dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: .8rem;
+    row-gap: .35rem;
+    align-items: baseline;
+  }
+  .formalia dt, .formalia dt:first-child { margin-top: 0; }
+  .formalia dd { margin: 0; }
   /* am Handy als Tippfläche etwas größer */
   .inhalt-seite h2 .hoch { width: 2.4rem; height: 2.4rem; font-size: 1rem; }
   /* Dachzeile und Fuß sagen dasselbe zweimal. Am Handy trägt die
@@ -709,6 +721,13 @@ footer {
     gap: .3rem .7rem;
   }
   .paare .f { font-size: .9em; }
+  /* Trägt der Wert selbst Untermarken („an:“/„cc:“), konkurrieren Marke und
+     Wert um eine Breite, die am Handy nicht reicht: die Spur wird auf ihr
+     Minimum gedrückt und die nicht umbrechende Marke läuft in die Wertspalte,
+     wo sie auf der Untermarke liegt. Deshalb hier Marke über den Wert –
+     dieselbe Lösung wie bei „Beginn:“, nur auf die Handyansicht beschränkt. */
+  .paare .voll-handy { grid-column: 1 / -1; }
+  .paare span.voll-handy:not(.f) { padding-left: 1.1rem; }
   .inhalt th, .inhalt td { padding: .45rem .6rem; }
   ol.themen li { gap: .55rem; }
   ol.themen .nr { min-width: 1.5rem; }
@@ -746,10 +765,10 @@ footer {
   /* Der ganze Wert eine Stufe eingerückt: er gehört sichtbar zum Kopf */
   .inhalt table.termine td:last-child { padding-left: .9rem; }
 
-  /* Zeilen ohne Feldmarken (Seminarleitung, E-Mail, Büro, Sprechstunde,
-     Moodle-Kurs): Kopf und Wert nebeneinander. Die Spurbreite ist fest,
-     damit alle diese Werte an derselben Stelle beginnen – im Fließsatz
-     begänne jeder woanders, je nach Länge des Kopfes. */
+  /* Zeilen ohne Feldmarken (Seminarleitung, E-Mail, Büro, Sprechstunde):
+     Kopf und Wert nebeneinander. Die Spurbreite ist fest, damit alle diese
+     Werte an derselben Stelle beginnen – im Fließsatz begänne jeder
+     woanders, je nach Länge des Kopfes. */
   .inhalt table.termine tr:not(:has(.paare)) {
     display: grid;
     grid-template-columns: minmax(9.2rem, max-content) 1fr;

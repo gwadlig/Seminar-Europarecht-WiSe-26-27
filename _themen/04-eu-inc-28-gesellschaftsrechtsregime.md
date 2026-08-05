@@ -1,5 +1,5 @@
 ---
-title: "Ein europäisches Delaware? Die „EU Inc.“ und der Wettbewerb der Gesellschaftsrechte"
+title: "Ausstieg aus dem nationalen&nbsp;Recht? Die&nbsp;„EU&nbsp;Inc.“ und die Grenzen der Binnenmarktkompetenz"
 block_nr: 1
 block_titel: "Rechtsgrundlage und Verfahren"
 reihenfolge: 40

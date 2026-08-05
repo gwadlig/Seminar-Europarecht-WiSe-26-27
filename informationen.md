@@ -25,7 +25,7 @@ permalink: /informationen/
 {%- assign sws = site.seminar.sws | strip -%}
 {%- assign swp = site.seminar.schwerpunkt | strip -%}
 <tr><td><span class="zwei">{{ site.seminar.lehrform }}{% if sws != "" %}<br><span class="sws">({{ sws }})</span>{% endif %}</span></td><td><div class="paare"><span class="f">Termin:</span><span>voraussichtlich {{ site.termine.block }}{% if site.termine.block_hinweis != "" %}; {{ site.termine.block_hinweis }}{% endif %}</span><span class="f">Raum:</span><span>{% if raum != "" %}{{ raum }}{% else %}wird hier ergänzt{% endif %}</span><span class="f">Empfohlen:</span><span>{{ site.seminar.fachsemester | replace: "; ", "<br>" }}</span>{% if swp != "" %}<span class="f">Schwerpunkt:</span><span>{{ swp | replace: "; ", "<br>" }}</span>{% endif %}</div></td></tr>
-<tr><td>Anmeldung</td><td><div class="paare"><span class="f">Frist:</span><span>{{ site.termine.anmeldeschluss }}</span><span class="f">per E&#8209;Mail:</span><span><span class="zeile"><span class="fi">an:</span>{% include email.html nur="haupt" %}</span><span class="zeile"><span class="fi">cc:</span><a href="mailto:sekretariat.europarecht@uni-leipzig.de">sekretariat.europarecht@<wbr>uni-leipzig.de</a></span></span></div></td></tr>
+<tr><td>Anmeldung</td><td><div class="paare"><span class="f">Frist:</span><span>{{ site.termine.anmeldeschluss }}</span><span class="f voll-handy">per E&#8209;Mail:</span><span class="voll-handy"><span class="zeile"><span class="fi">an:</span>{% include email.html nur="haupt" %}</span><span class="zeile"><span class="fi">cc:</span><a href="mailto:sekretariat.europarecht@uni-leipzig.de">sekretariat.europarecht@<wbr>uni-leipzig.de</a></span></span></div></td></tr>
 {%- assign vb_t = site.termine.vorbesprechung_termin | strip -%}
 <tr><td>Vorbesprechung</td><td><div class="paare"><span class="f">Woche:</span><span>{{ site.termine.vorbesprechung }}</span><span class="f">Termin:</span><span>{% if vb_t != "" %}{{ vb_t }}{% else %}wird hier ergänzt{% endif %}</span><span class="f">Ort:</span><span>online</span><span class="f">Zugang:</span><span>{{ site.termine.vorbesprechung_zugang }}</span></div></td></tr>
 {%- assign beginn_offen = site.termine.beginn_offen -%}
@@ -37,8 +37,9 @@ permalink: /informationen/
 <tr><td>Umfang</td><td><div class="paare"><span class="f">ZS:</span><span>35.000–50.000&nbsp;Zeichen, etwa 10–15&nbsp;Seiten</span><span class="f">PS:</span><span>45.000–65.000&nbsp;Zeichen, etwa 14–20&nbsp;Seiten</span></div></td></tr>
 <tr><td>Abgabe</td><td><div class="paare">{% if abg_z != "" or abg_p != "" %}<span class="f">ZS:</span><span>{% if abg_z != "" %}{{ abg_z }}{% else %}{{ abgabe_offen }}{% endif %}</span><span class="f">PS:</span><span>{% if abg_p != "" %}{{ abg_p }}{% else %}{{ abgabe_offen }}{% endif %}</span>{% else %}<span class="f">Abgabetermin:</span><span>{{ abgabe_offen }}</span>{% endif %}<span class="f">digital:</span><span><span class="zeile">als PDF und docx-Datei</span><span class="zeile"><span class="fi">an:</span><a href="mailto:sekretariat.europarecht@uni-leipzig.de">sekretariat.europarecht@<wbr>uni-leipzig.de</a></span><span class="zeile"><span class="fi">cc:</span>{% include email.html nur="haupt" %}</span></span><span class="f">gedruckt:</span><span>im Sekretariat der Professur<br>(Burgstraße&nbsp;21, Raum&nbsp;1.26)</span></div></td></tr>
 {%- assign mo = site.seminar.moodle | strip -%}
-<tr><td>Moodle-Kurs</td><td>{% if mo != "" %}<a href="{{ mo }}">{{ mo | remove: "https://" }}</a>{% else %}Der Link wird hier ergänzt{% endif %}</td></tr>
 </table>
+
+<p class="mehr" markdown="0">{% if mo != "" %}<a href="{{ mo }}">Zum Moodle-Kurs des Seminars <span class="weiterpfeil">→</span></a>{% else %}Der Link zum Moodle-Kurs wird hier ergänzt{% endif %}</p>
 
 ## Anmeldung und Themenvergabe <a href="#seitenanfang" class="hoch" aria-label="Zum Seitenanfang">↑</a> {#anmeldung}
 
