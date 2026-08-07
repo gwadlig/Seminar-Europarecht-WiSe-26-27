@@ -1,0 +1,17 @@
+# Betriebssystem
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editor- und Office-Temporaerdateien
+~$*
+*.tmp
+*.bak
+
+# Jekyll (lokaler Bau)
+_site/
+.jekyll-cache/
+
+# Lokale Arbeitskopien
+*.stand_*/
+*.docx
