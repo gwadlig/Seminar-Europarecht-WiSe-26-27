@@ -24,7 +24,7 @@ permalink: /informationen/
 <tr><td><span class="zwei">{{ site.seminar.lehrform }}{% if sws != "" %}<br><span class="sws">({{ sws }})</span>{% endif %}</span></td><td><div class="paare"><span class="f">Termin:</span><span>voraussichtlich {{ site.termine.block }}{% if site.termine.block_hinweis != "" %}; {{ site.termine.block_hinweis }}{% endif %}</span><span class="f">Raum:</span><span>{% if raum != "" %}{{ raum }}{% else %}wird hier ergänzt{% endif %}</span><span class="f">Empfohlen:</span><span>{{ site.seminar.fachsemester | replace: "; ", "<br>" }}</span>{% if swp != "" %}<span class="f">Schwerpunkt:</span><span>{{ swp | replace: "; ", "<br>" }}</span>{% endif %}</div></td></tr>
 <tr><td>Anmeldung</td><td><div class="paare"><span class="f">Frist:</span><span>{{ site.termine.anmeldeschluss }}</span><span class="f">Wohin:</span><span>per E&#8209;Mail<span class="zeile"><span class="fi">an:</span>{% include email.html nur="haupt" %}</span><span class="zeile"><span class="fi">cc:</span><a href="mailto:sekretariat.europarecht@uni-leipzig.de">sekretariat.europarecht@<wbr>uni-leipzig.de</a></span></span></div></td></tr>
 {%- assign vb_t = site.termine.vorbesprechung_termin | strip -%}
-<tr><td>Vorbesprechung</td><td><div class="paare"><span class="f">Woche:</span><span>{{ site.termine.vorbesprechung }}</span><span class="f">Termin:</span><span>{% if vb_t != "" %}{{ vb_t }}{% else %}wird hier ergänzt{% endif %}</span><span class="f">Ort:</span><span>online</span><span class="f">Zugang:</span><span>{{ site.termine.vorbesprechung_zugang }}</span></div></td></tr>
+<tr><td>Vorbesprechung</td><td><div class="paare"><span class="f">Termin:</span><span>{% if vb_t != "" %}<strong>{{ vb_t }}</strong>{% else %}wird hier ergänzt{% endif %}</span><span class="f">Ort:</span><span>online per Zoom</span><span class="f">Zugang:</span><span>{{ site.termine.vorbesprechung_zugang }}</span></div></td></tr>
 {%- assign beginn_offen = site.termine.beginn_offen -%}
 {%- assign abgabe_offen = site.termine.abgabe_offen -%}
 {%- assign beginn = site.termine.bearbeitungsbeginn | strip -%}
@@ -42,7 +42,7 @@ permalink: /informationen/
 
 Das Seminar steht Studierenden aller Schwerpunktbereiche als Zulassungsseminar (ZS) offen. Als Prüfungsseminar (PS) ist es dem Schwerpunktbereich&nbsp;4 zugeordnet; eine Zuordnung zu anderen Schwerpunktbereichen ist nach Absprache möglich. Für das Zulassungsseminar ist die Teilnahme ab dem 5.&nbsp;Fachsemester empfohlen, für das Prüfungsseminar ab dem 6.
 
-Die Anmeldung ist ab sofort bis **{{ site.termine.anmeldeschluss }}** per E&#8209;Mail möglich:
+Die Anmeldefrist ist am {{ site.termine.anmeldeschluss }} abgelaufen. Sollten Sie die Frist verpasst haben und am Seminar interessiert sein, schreiben Sie mir bitte per E&#8209;Mail. Ob noch Plätze frei werden, zeigt sich nach der Vorbesprechung.
 
 <div class="paare schmal" markdown="0"><span class="f">an:</span><span>{% include email.html nur="haupt" %}</span><span class="f">cc:</span><span><a href="mailto:sekretariat.europarecht@uni-leipzig.de">sekretariat.europarecht@<wbr>uni-leipzig.de</a></span></div>
 
@@ -64,7 +64,9 @@ Wenn Sie sich für ein Thema interessieren oder Fragen zur Themenwahl haben, sch
 
 ## Vorbesprechung <a href="#seitenanfang" class="hoch" aria-label="Zum Seitenanfang">↑</a> {#vorbesprechung}
 
-Die Vorbesprechung findet in der Woche vom **{{ site.termine.vorbesprechung }}** online statt. Der genaue Termin wird hier bekanntgegeben; die Zugangsdaten erhalten Sie nach Ablauf der Anmeldefrist per E&#8209;Mail.
+Die Vorbesprechung findet am **{{ site.termine.vorbesprechung_termin }}** online per Zoom statt. Die Zugangsdaten haben Sie per E&#8209;Mail erhalten. **Wenn Sie keine E&#8209;Mail bekommen haben, schreiben Sie mir bitte kurz an {% include email.html nur="haupt" %}.**
+
+Für das Blockseminar sind der 20.&nbsp;bis 22.&nbsp;Januar 2027 und der 28.&nbsp;und 29.&nbsp;Januar 2027 vorgemerkt. Die genauen Termine legen wir in der Vorbesprechung fest. Bitte prüfen Sie vorab, an welchen dieser Tage Sie können.
 
 Die Anwesenheit in der Vorbesprechung ist Voraussetzung für die Teilnahme am Seminar. Wenn Sie verhindert sind, melden Sie sich bitte vorab bei mir.
 
@@ -99,7 +101,7 @@ Einige der verlinkten Kurzbeiträge liegen hinter einer Bezahlschranke. Wenn Sie
 
 ## Seminarablauf und Vortrag <a href="#seitenanfang" class="hoch" aria-label="Zum Seitenanfang">↑</a> {#vortrag}
 
-Das Seminar findet als Blockveranstaltung statt, voraussichtlich **{{ site.termine.block }}**. Die genauen Termine und der Raum werden hier bekanntgegeben.
+Das Seminar findet als Blockveranstaltung statt, voraussichtlich **{{ site.termine.block }}**. Die genauen Termine werden in der Vorbesprechung gemeinsam festgelegt und anschließend hier bekanntgegeben.
 
 Im Seminar stellen Sie den Inhalt Ihrer Arbeit in einem mündlichen Vortrag vor und verteidigen ihn in der anschließenden Diskussion. Der Vortrag dauert **20&nbsp;bis&nbsp;25&nbsp;Minuten**.
 
