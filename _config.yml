@@ -22,11 +22,11 @@ termine:
   # &nbsp; verhindert Umbrüche zwischen Zahl und zugehörigem Wort
   # (Datum, Uhrzeit). Beim Ändern bitte beibehalten.
   anmeldeschluss: "Sonntag, 6.&nbsp;September 2026, 20&nbsp;Uhr"
-  vorbesprechung: ""
-  vorbesprechung_termin: "Freitag, 11.&nbsp;September 2026, 11&nbsp;Uhr"
-  vorbesprechung_zugang: "Die Zugangsdaten wurden per E&#8209;Mail verschickt. <strong>Wer keine E&#8209;Mail erhalten hat, schreibt mir bitte kurz.</strong>"
-  block: "20.&nbsp;bis&nbsp;22.&nbsp;Januar 2027 oder 28.&nbsp;und&nbsp;29.&nbsp;Januar 2027"
-  block_hinweis: "die genauen Termine legen wir in der Vorbesprechung fest. Bitte prüfen Sie vorab, an welchen Tagen Sie können"
+  vorbesprechung: "7.&nbsp;bis&nbsp;11.&nbsp;September 2026"
+  vorbesprechung_termin: ""
+  vorbesprechung_zugang: "Zugangsdaten erhalten Sie nach Ablauf der Anmeldefrist per E&#8209;Mail"
+  block: "in der zweiten Januarhälfte 2027"
+  block_hinweis: "genaue Termine folgen und werden hier ergänzt"
 
   bearbeitungsbeginn: ""
   abgabe_zulassung: ""
@@ -37,7 +37,7 @@ termine:
   linktext: "Anmeldung, Termine und Formalia"
   # Kurzfassung für die Handyansicht der Themenseiten
   linktext_kurz: "Anmeldung und Formalia"
-  linkzusatz: "Vorbesprechung am Freitag, 11.&nbsp;September 2026, 11&nbsp;Uhr, online"
+  linkzusatz: ""
 
 # Angaben für die Überblickstabelle
 seminar:
