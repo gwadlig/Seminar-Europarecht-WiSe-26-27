@@ -6,9 +6,8 @@ permalink: /informationen/
 
 <nav class="sprung" markdown="0">
 <div><a href="#anmeldung">Anmeldung und Themenvergabe</a>
-<a href="#vorbesprechung">Vorbesprechung</a></div>
-<div><a href="#arbeit">Seminararbeit</a>
-<a href="#vortrag">Seminarablauf und Vortrag</a>
+<a href="#arbeit">Seminararbeit</a></div>
+<div><a href="#vortrag">Seminarablauf und Vortrag</a>
 <a href="#betreuung">Betreuung</a></div>
 </nav>
 
@@ -21,10 +20,8 @@ permalink: /informationen/
 {%- assign raum = site.seminar.raum | strip -%}
 {%- assign sws = site.seminar.sws | strip -%}
 {%- assign swp = site.seminar.schwerpunkt | strip -%}
-<tr><td><span class="zwei">{{ site.seminar.lehrform }}{% if sws != "" %}<br><span class="sws">({{ sws }})</span>{% endif %}</span></td><td><div class="paare"><span class="f">Termin:</span><span>voraussichtlich {{ site.termine.block }}{% if site.termine.block_hinweis != "" %}; {{ site.termine.block_hinweis }}{% endif %}</span><span class="f">Raum:</span><span>{% if raum != "" %}{{ raum }}{% else %}wird hier ergänzt{% endif %}</span><span class="f">Empfohlen:</span><span>{{ site.seminar.fachsemester | replace: "; ", "<br>" }}</span>{% if swp != "" %}<span class="f">Schwerpunkt:</span><span>{{ swp | replace: "; ", "<br>" }}</span>{% endif %}</div></td></tr>
-<tr><td>Anmeldung</td><td><div class="paare"><span class="f">Frist:</span><span>{{ site.termine.anmeldeschluss }}</span><span class="f">Wohin:</span><span>per E&#8209;Mail<span class="zeile"><span class="fi">an:</span>{% include email.html nur="haupt" %}</span><span class="zeile"><span class="fi">cc:</span><a href="mailto:sekretariat.europarecht@uni-leipzig.de">sekretariat.europarecht@<wbr>uni-leipzig.de</a></span></span></div></td></tr>
-{%- assign vb_t = site.termine.vorbesprechung_termin | strip -%}
-<tr><td>Vorbesprechung</td><td><div class="paare"><span class="f">Woche:</span><span>{{ site.termine.vorbesprechung }}</span><span class="f">Termin:</span><span>{% if vb_t != "" %}{{ vb_t }}{% else %}wird hier ergänzt{% endif %}</span><span class="f">Ort:</span><span>online</span><span class="f">Zugang:</span><span>{{ site.termine.vorbesprechung_zugang }}</span></div></td></tr>
+<tr><td><span class="zwei">{{ site.seminar.lehrform }}{% if sws != "" %}<br><span class="sws">({{ sws }})</span>{% endif %}</span></td><td><div class="paare"><span class="f">Termin:</span><span>{{ site.termine.block }}{% if site.termine.block_hinweis != "" %}; {{ site.termine.block_hinweis }}{% endif %}</span><span class="f">Raum:</span><span>{% if raum != "" %}{{ raum }}{% else %}wird hier ergänzt{% endif %}</span><span class="f">Empfohlen:</span><span>{{ site.seminar.fachsemester | replace: "; ", "<br>" }}</span>{% if swp != "" %}<span class="f">Schwerpunkt:</span><span>{{ swp | replace: "; ", "<br>" }}</span>{% endif %}</div></td></tr>
+<tr><td>Anmeldung</td><td><div class="paare"><span class="f">Verbindlich bis:</span><span>{{ site.termine.anmeldung_verbindlich }}</span><span class="f">Wohin:</span><span>per E&#8209;Mail<span class="zeile"><span class="fi">an:</span>{% include email.html nur="haupt" %}</span><span class="zeile"><span class="fi">cc:</span><a href="mailto:sekretariat.europarecht@uni-leipzig.de">sekretariat.europarecht@<wbr>uni-leipzig.de</a></span></span></div></td></tr>
 {%- assign beginn_offen = site.termine.beginn_offen -%}
 {%- assign abgabe_offen = site.termine.abgabe_offen -%}
 {%- assign beginn = site.termine.bearbeitungsbeginn | strip -%}
@@ -42,11 +39,26 @@ permalink: /informationen/
 
 Das Seminar steht Studierenden aller Schwerpunktbereiche als Zulassungsseminar (ZS) offen. Als Prüfungsseminar (PS) ist es dem Schwerpunktbereich&nbsp;4 zugeordnet; eine Zuordnung zu anderen Schwerpunktbereichen ist nach Absprache möglich. Für das Zulassungsseminar ist die Teilnahme ab dem 5.&nbsp;Fachsemester empfohlen, für das Prüfungsseminar ab dem 6.
 
-Die Anmeldung ist ab sofort bis **{{ site.termine.anmeldeschluss }}** per E&#8209;Mail möglich:
+Die Vorbesprechung hat am {{ site.termine.vorbesprechung_termin }} stattgefunden.
+
+### Verbindliche Anmeldung bis {{ site.termine.anmeldung_verbindlich }}
+
+Bitte bestätigen Sie Ihre Teilnahme bis **{{ site.termine.anmeldung_verbindlich }}** mit einer kurzen E&#8209;Mail:
 
 <div class="paare schmal" markdown="0"><span class="f">an:</span><span>{% include email.html nur="haupt" %}</span><span class="f">cc:</span><span><a href="mailto:sekretariat.europarecht@uni-leipzig.de">sekretariat.europarecht@<wbr>uni-leipzig.de</a></span></div>
 
-Bitte geben Sie dabei Folgendes an:
+Bitte geben Sie darin an:
+
+- dass Sie verbindlich am Seminar teilnehmen
+- Ihr Thema mit Nummer und Titel, wie in der Vorbesprechung besprochen
+- Ihre Pronomen; ein Wort reicht („sie“, „er“, „they“ …). Wenn Sie das nicht angeben möchten, lassen Sie es einfach weg.
+- wenn Sie sich ein Thema teilen, wie in der Vorbesprechung festgelegt: den Zuschnitt und die Abgrenzung in einigen Stichpunkten oder Sätzen
+
+Erst mit dieser Rückmeldung steht fest, wer teilnimmt. Die Themenvergabe und die Plätze für Nachrückende richten sich danach. Wenn Sie sich inzwischen gegen die Teilnahme entschieden haben, sagen Sie bitte kurz ab, damit der Platz weitergegeben werden kann.
+
+### Nachmeldung
+
+Wenn Sie sich noch nachmelden möchten, schreiben Sie mir bitte per E&#8209;Mail an {% include email.html nur="haupt" %}. Am {{ site.termine.restplaetze }} steht fest, ob es noch freie Plätze gibt. Bitte geben Sie dabei Folgendes an:
 
 - Name, Matrikelnummer, Fachsemester und E&#8209;Mail Adresse
 - Schwerpunktbereich, gegebenenfalls den voraussichtlichen
@@ -56,17 +68,7 @@ Bitte geben Sie dabei Folgendes an:
 
 Für das Prüfungsseminar brauchen Sie die Zulassung zur Schwerpunktbereichsprüfung; diese erteilt das Studienbüro. Das Formular zur Anmeldung des Prüfungsseminars können Sie nachreichen.
 
-Melden sich mehr Interessierte, als Themen zur Verfügung stehen, gilt folgende Reihenfolge: Teilnahme am Prüfungsseminar, Zugehörigkeit zum Schwerpunktbereich, Zeitpunkt der Anmeldung.
-
-Über die Themenvergabe verständigen wir uns in der Vorbesprechung. Manche Themen lassen mehr als eine Bearbeitung zu; in diesen Fällen wird der Zuschnitt bei der Vergabe festgelegt.
-
-Wenn Sie sich für ein Thema interessieren oder Fragen zur Themenwahl haben, schreiben Sie mir gerne schon vorher unter {% include email.html nur="haupt" %}.
-
-## Vorbesprechung <a href="#seitenanfang" class="hoch" aria-label="Zum Seitenanfang">↑</a> {#vorbesprechung}
-
-Die Vorbesprechung findet in der Woche vom **{{ site.termine.vorbesprechung }}** online statt. Der genaue Termin wird hier bekanntgegeben; die Zugangsdaten erhalten Sie nach Ablauf der Anmeldefrist per E&#8209;Mail.
-
-Die Anwesenheit in der Vorbesprechung ist Voraussetzung für die Teilnahme am Seminar. Wenn Sie verhindert sind, melden Sie sich bitte vorab bei mir.
+Melden sich mehr Interessierte, als Plätze frei sind, gilt folgende Reihenfolge: Teilnahme am Prüfungsseminar, Zugehörigkeit zum Schwerpunktbereich, Zeitpunkt der Anmeldung.
 
 ## Seminararbeit <a href="#seitenanfang" class="hoch" aria-label="Zum Seitenanfang">↑</a> {#arbeit}
 
@@ -78,6 +80,7 @@ Die Anwesenheit in der Vorbesprechung ist Voraussetzung für die Teilnahme am Se
 </div>
 
 Der Umfang versteht sich einschließlich Fußnoten und Leerzeichen. Titelseite, Gliederung und Verzeichnisse zählen nicht mit. Maßgeblich ist die Zeichenzahl; die Seitenangaben sind nur Anhaltspunkte und gehen von 12&nbsp;Punkt bei 1,5&#8209;zeiligem Abstand aus. Die Bearbeitungszeit beginnt mit der endgültigen Themenzuteilung.
+
 
 Eine Verlängerung der Bearbeitungszeit für die Prüfungsseminararbeit kann unter Nennung besonderer Gründe auf Antrag gewährt werden. Richten Sie solche Anträge bitte per E&#8209;Mail an mich ({% include email.html nur="haupt" %}).
 
@@ -99,11 +102,11 @@ Einige der verlinkten Kurzbeiträge liegen hinter einer Bezahlschranke. Wenn Sie
 
 ## Seminarablauf und Vortrag <a href="#seitenanfang" class="hoch" aria-label="Zum Seitenanfang">↑</a> {#vortrag}
 
-Das Seminar findet als Blockveranstaltung statt, voraussichtlich **{{ site.termine.block }}**. Die genauen Termine und der Raum werden hier bekanntgegeben.
+Das Blockseminar findet von **{{ site.termine.block }}**, in Präsenz in Leipzig statt. Der genaue Ablaufplan folgt, sobald die Themen feststehen.
 
 Im Seminar stellen Sie den Inhalt Ihrer Arbeit in einem mündlichen Vortrag vor und verteidigen ihn in der anschließenden Diskussion. Der Vortrag dauert **20&nbsp;bis&nbsp;25&nbsp;Minuten**.
 
-Für das Blockseminar besteht grundsätzlich **Anwesenheitspflicht**; wenn Sie verhindert sind, melden Sie sich bitte vorab bei mir. Auch die Teilnahme an den Diskussionen der anderen Vorträge gehört zur Seminarleistung.
+Die Teilnahme ist an **allen drei Tagen Pflicht**. Auch die Diskussion der anderen Vorträge gehört zur Seminarleistung. Wenn Sie an einem Tag verhindert sind, entschuldigen Sie sich bitte vorher per E&#8209;Mail.
 
 ## Betreuung <a href="#seitenanfang" class="hoch" aria-label="Zum Seitenanfang">↑</a> {#betreuung}
 
