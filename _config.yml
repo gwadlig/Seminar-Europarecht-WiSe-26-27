@@ -30,14 +30,14 @@ termine:
 
   bearbeitungsbeginn: "Sonntag, 18.&nbsp;Oktober 2026 (Themenzuteilung)"
   abgabe_zulassung: "Sonntag, 20.&nbsp;Dezember 2026, 23:59&nbsp;Uhr"
-  abgabe_pruefung: ""
+  abgabe_pruefung: "Sonntag, 13.&nbsp;Dezember 2026, 23:59&nbsp;Uhr"
   beginn_offen: "mit der Themenzuteilung; (das Datum wird hier ergänzt)"
   abgabe_offen: "wird hier ergänzt"
 
   linktext: "Termine und Formalia"
   # Kurzfassung für die Handyansicht der Themenseiten
   linktext_kurz: "Termine und Formalia"
-  linkzusatz: "Themenvergabe am 18.&nbsp;Oktober 2026, Abgabe am 20.&nbsp;Dezember 2026"
+  linkzusatz: "Themenvergabe am 18.&nbsp;Oktober 2026, Abgabe am 20.&nbsp;Dezember 2026 (Prüfungsseminar: 13.&nbsp;Dezember)"
 
 # Angaben für die Überblickstabelle
 seminar:

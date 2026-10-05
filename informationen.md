@@ -51,7 +51,7 @@ Die Themen werden am **{{ site.termine.themenzuteilung }}**, zugeteilt. Mit der 
 <div><p class="typ">Prüfungsseminar (PS)</p><dl><dt>Bearbeitungszeit</dt><dd>8&nbsp;Wochen</dd><dt>Umfang</dt><dd>45.000–65.000&nbsp;Zeichen<br>(etwa 14–20&nbsp;Seiten)</dd></dl></div>
 </div>
 
-Der Umfang versteht sich einschließlich Fußnoten und Leerzeichen. Titelseite, Gliederung und Verzeichnisse zählen nicht mit. Maßgeblich ist die Zeichenzahl; die Seitenangaben sind nur Anhaltspunkte und gehen von 12&nbsp;Punkt bei 1,5&#8209;zeiligem Abstand aus. Die Bearbeitungszeit beginnt mit der Themenzuteilung am {{ site.termine.themenzuteilung }}. Abgabe ist am **{{ site.termine.abgabe_zulassung }}**.
+Der Umfang versteht sich einschließlich Fußnoten und Leerzeichen. Titelseite, Gliederung und Verzeichnisse zählen nicht mit. Maßgeblich ist die Zeichenzahl; die Seitenangaben sind nur Anhaltspunkte und gehen von 12&nbsp;Punkt bei 1,5&#8209;zeiligem Abstand aus. Die Bearbeitungszeit beginnt mit der Themenzuteilung am {{ site.termine.themenzuteilung }}. Abgabe ist für das Zulassungsseminar am **{{ site.termine.abgabe_zulassung }}**, für das Prüfungsseminar eine Woche früher, am **{{ site.termine.abgabe_pruefung }}**.
 
 
 Eine Verlängerung der Bearbeitungszeit für die Prüfungsseminararbeit kann unter Nennung besonderer Gründe auf Antrag gewährt werden. Richten Sie solche Anträge bitte per E&#8209;Mail an mich ({% include email.html nur="haupt" %}).
