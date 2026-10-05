@@ -9,12 +9,11 @@ lehrende: "Dr. Gabriele Wadlig, LL.M. (NYU)"
 lehrende_kurz: "Gabriele Wadlig"
 
 # Kontakt
-# email ist die Hauptadresse: sie steht überall zuerst und ist die
-# einzige, die in der Tabelle bei Anmeldung und Abgabe sowie im
-# Fließtext genannt wird. email2 erscheint nur im Seitenkopf und in
-# der Kontaktzeile der Überblickstabelle.
+# email ist die einzige Adresse auf der Website. email2 bleibt leer;
+# eine zweite Adresse erschiene im Seitenkopf und in der Kontaktzeile
+# der Überblickstabelle.
 email: "gabriele.wadlig@uni-leipzig.de"
-email2: "gabriele.wadlig@law.nyu.edu"
+email2: ""
 
 
 # Termine
@@ -24,24 +23,21 @@ termine:
   anmeldeschluss: "Sonntag, 6.&nbsp;September 2026, 20&nbsp;Uhr"
   vorbesprechung: ""
   vorbesprechung_termin: "Freitag, 25.&nbsp;September 2026"
-  # Verbindliche Anmeldung nach der Vorbesprechung
-  anmeldung_verbindlich: "Donnerstag, 1.&nbsp;Oktober 2026, 12&nbsp;Uhr"
-  # Tag, an dem feststeht, ob es Restplätze für Nachmeldungen gibt
-  restplaetze: "Freitag, 2.&nbsp;Oktober 2026"
+  themenzuteilung: "Sonntag, 18.&nbsp;Oktober 2026"
   vorbesprechung_zugang: "Die Zugangsdaten wurden per E&#8209;Mail verschickt. <strong>Wer keine E&#8209;Mail erhalten hat, schreibt mir bitte kurz.</strong>"
   block: "Mittwoch, 20., bis Freitag, 22.&nbsp;Januar 2027"
   block_hinweis: "in Präsenz in Leipzig"
 
-  bearbeitungsbeginn: ""
-  abgabe_zulassung: ""
+  bearbeitungsbeginn: "Sonntag, 18.&nbsp;Oktober 2026 (Themenzuteilung)"
+  abgabe_zulassung: "Sonntag, 20.&nbsp;Dezember 2026, 23:59&nbsp;Uhr"
   abgabe_pruefung: ""
   beginn_offen: "mit der Themenzuteilung; (das Datum wird hier ergänzt)"
-  abgabe_offen: "wird am Freitag, 2.&nbsp;Oktober 2026, hier ergänzt"
+  abgabe_offen: "wird hier ergänzt"
 
-  linktext: "Anmeldung, Termine und Formalia"
+  linktext: "Termine und Formalia"
   # Kurzfassung für die Handyansicht der Themenseiten
-  linktext_kurz: "Anmeldung und Formalia"
-  linkzusatz: "Verbindliche Anmeldung bis Donnerstag, 1.&nbsp;Oktober 2026, 12&nbsp;Uhr"
+  linktext_kurz: "Termine und Formalia"
+  linkzusatz: "Themenvergabe am 18.&nbsp;Oktober 2026, Abgabe am 20.&nbsp;Dezember 2026"
 
 # Angaben für die Überblickstabelle
 seminar:

@@ -1,11 +1,11 @@
 ---
 layout: seite
-title: "Anmeldung, Termine und Formalia"
+title: "Termine und Formalia"
 permalink: /informationen/
 ---
 
 <nav class="sprung" markdown="0">
-<div><a href="#anmeldung">Anmeldung und Themenvergabe</a>
+<div><a href="#anmeldung">Themenvergabe</a>
 <a href="#arbeit">Seminararbeit</a></div>
 <div><a href="#vortrag">Seminarablauf und Vortrag</a>
 <a href="#betreuung">Betreuung</a></div>
@@ -21,7 +21,6 @@ permalink: /informationen/
 {%- assign sws = site.seminar.sws | strip -%}
 {%- assign swp = site.seminar.schwerpunkt | strip -%}
 <tr><td><span class="zwei">{{ site.seminar.lehrform }}{% if sws != "" %}<br><span class="sws">({{ sws }})</span>{% endif %}</span></td><td><div class="paare"><span class="f">Termin:</span><span>{{ site.termine.block }}{% if site.termine.block_hinweis != "" %}; {{ site.termine.block_hinweis }}{% endif %}</span><span class="f">Raum:</span><span>{% if raum != "" %}{{ raum }}{% else %}wird hier ergänzt{% endif %}</span><span class="f">Empfohlen:</span><span>{{ site.seminar.fachsemester | replace: "; ", "<br>" }}</span>{% if swp != "" %}<span class="f">Schwerpunkt:</span><span>{{ swp | replace: "; ", "<br>" }}</span>{% endif %}</div></td></tr>
-<tr><td>Anmeldung</td><td><div class="paare"><span class="f">Verbindlich bis:</span><span>{{ site.termine.anmeldung_verbindlich }}</span><span class="f">Wohin:</span><span>per E&#8209;Mail<span class="zeile"><span class="fi">an:</span>{% include email.html nur="haupt" %}</span><span class="zeile"><span class="fi">cc:</span><a href="mailto:sekretariat.europarecht@uni-leipzig.de">sekretariat.europarecht@<wbr>uni-leipzig.de</a></span></span></div></td></tr>
 {%- assign beginn_offen = site.termine.beginn_offen -%}
 {%- assign abgabe_offen = site.termine.abgabe_offen -%}
 {%- assign beginn = site.termine.bearbeitungsbeginn | strip -%}
@@ -29,46 +28,19 @@ permalink: /informationen/
 {%- assign abg_p = site.termine.abgabe_pruefung | strip -%}
 <tr><td>Bearbeitungszeit</td><td><div class="paare"><span class="f">Beginn:</span><span>{% if beginn != "" %}{{ beginn }}{% else %}{{ beginn_offen | replace: "; ", "<br>" }}{% endif %}</span><span class="f">ZS:</span><span>9&nbsp;Wochen</span><span class="f">PS:</span><span>8&nbsp;Wochen</span></div></td></tr>
 <tr><td>Umfang</td><td><div class="paare"><span class="f">ZS:</span><span>35.000–50.000&nbsp;Zeichen, etwa 10–15&nbsp;Seiten</span><span class="f">PS:</span><span>45.000–65.000&nbsp;Zeichen, etwa 14–20&nbsp;Seiten</span></div></td></tr>
-<tr><td>Abgabe</td><td><div class="paare">{% if abg_z != "" or abg_p != "" %}<span class="f">ZS:</span><span>{% if abg_z != "" %}{{ abg_z }}{% else %}{{ abgabe_offen }}{% endif %}</span><span class="f">PS:</span><span>{% if abg_p != "" %}{{ abg_p }}{% else %}{{ abgabe_offen }}{% endif %}</span>{% else %}<span class="f">Termin:</span><span>{{ abgabe_offen }}</span>{% endif %}<span class="f">Wohin:</span><span>als PDF und docx<span class="zeile"><span class="fi">an:</span><a href="mailto:sekretariat.europarecht@uni-leipzig.de">sekretariat.europarecht@<wbr>uni-leipzig.de</a></span><span class="zeile"><span class="fi">cc:</span>{% include email.html nur="haupt" %}</span>gedruckt im Sekretariat der Professur<br>(Burgstraße&nbsp;21, Raum&nbsp;1.26)</span></div></td></tr>
+<tr><td>Abgabe</td><td><div class="paare">{% if abg_z != "" and abg_p != "" %}<span class="f">ZS:</span><span>{{ abg_z }}</span><span class="f">PS:</span><span>{{ abg_p }}</span>{% else %}<span class="f">Termin:</span><span>{% if abg_z != "" %}{{ abg_z }}{% elsif abg_p != "" %}{{ abg_p }}{% else %}{{ abgabe_offen }}{% endif %}</span>{% endif %}<span class="f">Wohin:</span><span>als PDF und docx<span class="zeile"><span class="fi">an:</span><a href="mailto:sekretariat.europarecht@uni-leipzig.de">sekretariat.europarecht@<wbr>uni-leipzig.de</a></span><span class="zeile"><span class="fi">cc:</span>{% include email.html nur="haupt" %}</span>gedruckt im Sekretariat der Professur<br>(Burgstraße&nbsp;21, Raum&nbsp;1.26)</span></div></td></tr>
 {%- assign mo = site.seminar.moodle | strip -%}
 </table>
 
 <p class="mehr" markdown="0">{% if mo != "" %}<a href="{{ mo }}">Zum Moodle-Kurs des Seminars <span class="weiterpfeil">→</span></a>{% else %}Der Link zum Moodle-Kurs wird hier ergänzt{% endif %}</p>
 
-## Anmeldung und Themenvergabe <a href="#seitenanfang" class="hoch" aria-label="Zum Seitenanfang">↑</a> {#anmeldung}
+## Themenvergabe <a href="#seitenanfang" class="hoch" aria-label="Zum Seitenanfang">↑</a> {#anmeldung}
 
 Das Seminar steht Studierenden aller Schwerpunktbereiche als Zulassungsseminar (ZS) offen. Als Prüfungsseminar (PS) ist es dem Schwerpunktbereich&nbsp;4 zugeordnet; eine Zuordnung zu anderen Schwerpunktbereichen ist nach Absprache möglich. Für das Zulassungsseminar ist die Teilnahme ab dem 5.&nbsp;Fachsemester empfohlen, für das Prüfungsseminar ab dem 6.
 
 Die Vorbesprechung hat am {{ site.termine.vorbesprechung_termin }} stattgefunden.
 
-### Verbindliche Anmeldung bis {{ site.termine.anmeldung_verbindlich }}
-
-Bitte bestätigen Sie Ihre Teilnahme bis **{{ site.termine.anmeldung_verbindlich }}** mit einer kurzen E&#8209;Mail:
-
-<div class="paare schmal" markdown="0"><span class="f">an:</span><span>{% include email.html nur="haupt" %}</span><span class="f">cc:</span><span><a href="mailto:sekretariat.europarecht@uni-leipzig.de">sekretariat.europarecht@<wbr>uni-leipzig.de</a></span></div>
-
-Bitte geben Sie darin an:
-
-- dass Sie verbindlich am Seminar teilnehmen
-- Ihr Thema mit Nummer und Titel, wie in der Vorbesprechung besprochen
-- Ihre Pronomen; ein Wort reicht („sie“, „er“, „they“ …). Wenn Sie das nicht angeben möchten, lassen Sie es einfach weg.
-- wenn Sie sich ein Thema teilen, wie in der Vorbesprechung festgelegt: den Zuschnitt und die Abgrenzung in einigen Stichpunkten oder Sätzen
-
-Erst mit dieser Rückmeldung steht fest, wer teilnimmt. Die Themenvergabe und die Plätze für Nachrückende richten sich danach. Wenn Sie sich inzwischen gegen die Teilnahme entschieden haben, sagen Sie bitte kurz ab, damit der Platz weitergegeben werden kann.
-
-### Nachmeldung
-
-Wenn Sie sich noch nachmelden möchten, schreiben Sie mir bitte per E&#8209;Mail an {% include email.html nur="haupt" %}. Am {{ site.termine.restplaetze }} steht fest, ob es noch freie Plätze gibt. Bitte geben Sie dabei Folgendes an:
-
-- Name, Matrikelnummer, Fachsemester und E&#8209;Mail Adresse
-- Schwerpunktbereich, gegebenenfalls den voraussichtlichen
-- ob Sie ein Zulassungs- oder ein Prüfungsseminar schreiben
-- bis zu drei Themenwünsche mit Nummer und Titel, in der Reihenfolge Ihrer Präferenz
-- ob Sie zugleich einen Schlüsselqualifikationsnachweis erwerben möchten
-
-Für das Prüfungsseminar brauchen Sie die Zulassung zur Schwerpunktbereichsprüfung; diese erteilt das Studienbüro. Das Formular zur Anmeldung des Prüfungsseminars können Sie nachreichen.
-
-Melden sich mehr Interessierte, als Plätze frei sind, gilt folgende Reihenfolge: Teilnahme am Prüfungsseminar, Zugehörigkeit zum Schwerpunktbereich, Zeitpunkt der Anmeldung.
+Die Themen werden am **{{ site.termine.themenzuteilung }}**, zugeteilt. Mit der Zuteilung beginnt die Bearbeitungszeit.
 
 ## Seminararbeit <a href="#seitenanfang" class="hoch" aria-label="Zum Seitenanfang">↑</a> {#arbeit}
 
@@ -79,7 +51,7 @@ Melden sich mehr Interessierte, als Plätze frei sind, gilt folgende Reihenfolge
 <div><p class="typ">Prüfungsseminar (PS)</p><dl><dt>Bearbeitungszeit</dt><dd>8&nbsp;Wochen</dd><dt>Umfang</dt><dd>45.000–65.000&nbsp;Zeichen<br>(etwa 14–20&nbsp;Seiten)</dd></dl></div>
 </div>
 
-Der Umfang versteht sich einschließlich Fußnoten und Leerzeichen. Titelseite, Gliederung und Verzeichnisse zählen nicht mit. Maßgeblich ist die Zeichenzahl; die Seitenangaben sind nur Anhaltspunkte und gehen von 12&nbsp;Punkt bei 1,5&#8209;zeiligem Abstand aus. Die Bearbeitungszeit beginnt mit der endgültigen Themenzuteilung.
+Der Umfang versteht sich einschließlich Fußnoten und Leerzeichen. Titelseite, Gliederung und Verzeichnisse zählen nicht mit. Maßgeblich ist die Zeichenzahl; die Seitenangaben sind nur Anhaltspunkte und gehen von 12&nbsp;Punkt bei 1,5&#8209;zeiligem Abstand aus. Die Bearbeitungszeit beginnt mit der Themenzuteilung am {{ site.termine.themenzuteilung }}. Abgabe ist am **{{ site.termine.abgabe_zulassung }}**.
 
 
 Eine Verlängerung der Bearbeitungszeit für die Prüfungsseminararbeit kann unter Nennung besonderer Gründe auf Antrag gewährt werden. Richten Sie solche Anträge bitte per E&#8209;Mail an mich ({% include email.html nur="haupt" %}).
